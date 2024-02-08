@@ -5,6 +5,9 @@
 body {
   font-family: 'PP Supply Mono', 'Roboto Mono', sans-serif;
   padding: 2rem;
+    background: #FAFAFA;
+    color: #353535;
+    
 }
 
 .element {
