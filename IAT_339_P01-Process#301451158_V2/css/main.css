@@ -11,10 +11,10 @@ body {
 }
 
 .element {
-`  padding-bottom: 2rem;
+  padding-bottom: 2rem;
   border-top-width: 0.15rem;
   border-top-style: solid;
-  border-top-color: #727272;`
+  border-top-color: #727272;
 }
 
 section{
@@ -56,7 +56,11 @@ p {
 }
 
 a{
+<<<<<<< HEAD
   color: #FFCB7D;
+=======
+  color: #F8B5D5;
+>>>>>>> b5cca295c485b99b11d0e2e57c29d10ac8407161
   font-weight: bold;
   text-decoration: none;
 }
@@ -247,7 +251,11 @@ code {
 
 .navSubmit{
   font-family: 'PP Neue Montreal Mono', 'Impact', sans-serif;
+<<<<<<< HEAD
   background-color: #FFCB7D;
+=======
+  background-color: #F8B5D5;
+>>>>>>> b5cca295c485b99b11d0e2e57c29d10ac8407161
   border: none;
   color: #ffffff;
   width: 15rem;
@@ -273,9 +281,15 @@ code {
 }
 
 .navReset:focus, .navReset:hover {
+<<<<<<< HEAD
   color: white;
   background-color: #727272;
   border: 1px solid white;
+=======
+  color: #F8B5D5;
+  background-color: #727272;
+  border: 1px solid #F8B5D5;
+>>>>>>> b5cca295c485b99b11d0e2e57c29d10ac8407161
   transition-duration: 0.5s;
 }
 /*
@@ -311,13 +325,22 @@ input[type=text], input[type=email], input[type=tel]{
 }
 
 input[type=text]:focus, .paymentFormInput:focus {
+<<<<<<< HEAD
   color: #FFCB7D;
   border: 3px solid #FFCB7D;
+=======
+  color: #F8B5D5;
+  border: 3px solid #F8B5D5;
+>>>>>>> b5cca295c485b99b11d0e2e57c29d10ac8407161
   transition-duration: 0.5s;
 }
 
 .paymentFormSubmit:focus{
+<<<<<<< HEAD
   background-color: #FFCB7D;
+=======
+  background-color: #F8B5D5;
+>>>>>>> b5cca295c485b99b11d0e2e57c29d10ac8407161
   color: #ffffff;
   transition-duration: 0.5s;
 }
@@ -409,5 +432,9 @@ input[type=text]:focus, .paymentFormInput:focus {
 }
 
 .profileName{
+<<<<<<< HEAD
   color: #FFCB7D;
+=======
+  color: #F8B5D5;
+>>>>>>> b5cca295c485b99b11d0e2e57c29d10ac8407161
 }
