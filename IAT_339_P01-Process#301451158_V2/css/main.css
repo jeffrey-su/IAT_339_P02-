@@ -10,6 +10,16 @@ body {
     
 }
 
+.infoLink{
+    color: #FF9ECD;
+    text-decoration: underline;
+}
+
+.infoLink:hover, .infoLink:focus{
+    color:#F8B5D5; 
+    text-decoration: none;
+}
+
 .element {
   padding-bottom: 2rem;
   border-top-width: 0.15rem;
@@ -55,6 +65,13 @@ p {
 
 }
 
+.p-product{
+  font-family: 'PP Supply Mono','Courier New', sans-serif;
+  font-weight: 100;
+  margin-top: 0;
+  max-width: 30rem;
+}
+
 a{
 <<<<<<< HEAD
   color: #FFCB7D;
@@ -73,10 +90,11 @@ nav{
   display: flex;
   flex-direction: row;
   justify-content: center;
+    color:#FF9ECD; 
 
 }
 nav a:hover, nav a:focus {
-  text-decoration: none;
+  color:#F8B5D5;
 }
 
 .nav a {
@@ -165,7 +183,7 @@ code {
   padding-bottom: 2rem;
   border-top-width: 0.15rem;
   border-top-style: solid;
-  border-top-color: #727272;
+  border-top-color: #7272 72;
 
   grid-column: 2 / 2;
   grid-row: 2;
@@ -226,20 +244,22 @@ code {
 /* Styling for the navigation button */
 .defaultButton {
   font-family: 'PP Neue Montreal Mono', 'Impact', sans-serif;
-    color: #FFCB7D;
+    color: #FF9ECD;
     border: 3px solid; 
     background:none;
-  border-color: #FFCB7D;
+  border-color: #FF9ECD;
       width: 15rem;
   padding: 10px;
   margin: 8px 0;
     font-size: 15px;
 }
 
+
+
 .defaultButton:hover, .defaultButton:focus {
-    background-color: #FFCB7D;
+    background-color: #FF9ECD;
   border: 3px solid;
-    border-color: #FFCB7D;
+    border-color: #FF9ECD;
     
   color: #ffffff;
   width: 15rem;
@@ -252,12 +272,12 @@ code {
 .navSubmit{
   font-family: 'PP Neue Montreal Mono', 'Impact', sans-serif;
 <<<<<<< HEAD
-  background-color: #FFCB7D;
+  background-color: white;
 =======
   background-color: #F8B5D5;
 >>>>>>> b5cca295c485b99b11d0e2e57c29d10ac8407161
-  border: none;
-  color: #ffffff;
+  border: 2px solid #F8B5D5;  
+  color: white;
   width: 15rem;
   padding: 10px;
   margin: 8px 0;
@@ -265,31 +285,29 @@ code {
 
 .navSubmit:focus, .navSubmit:hover {
   color: #ffffff;
-  background-color: #727272;
-  border: none;
+  background-color: #F8B5D5;
+  border: 2px solid #F8B5D5;
   transition-duration: 0.5s;
 }
 
 .navReset{
   font-family: 'PP Neue Montreal Mono', 'Impact', sans-serif;
-  background-color: #727272;
-  border: none;
-  color: #ffffff;
+  border: 2px solid #F8B5D5;
+    background-color: white;
+  color: #F8B5D5;
   width: 15rem;
   padding: 10px;
   margin: 8px 0;
 }
 
 .navReset:focus, .navReset:hover {
-<<<<<<< HEAD
   color: white;
-  background-color: #727272;
+  background-color: #F8B5D5;
   border: 1px solid white;
 =======
   color: #F8B5D5;
-  background-color: #727272;
+  background-color: #F8B5D5;
   border: 1px solid #F8B5D5;
->>>>>>> b5cca295c485b99b11d0e2e57c29d10ac8407161
   transition-duration: 0.5s;
 }
 /*
