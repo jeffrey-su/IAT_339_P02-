@@ -3,7 +3,6 @@
   Default styling for the style guide
 */
 body {
-  font-family: 'PP Supply Mono', 'Roboto Mono', sans-serif;
   padding: 2rem;
     background: #FAFAFA;
     color: #353535;
@@ -32,52 +31,62 @@ section{
 }
 
 h1{
-  font-family: 'PP Neue Montreal Mono', 'Impact', sans-serif;
+  font-family: 'PP Right Didone - Spatial Fine', 'Garamond', serif;
   font-size: 2.5rem;
+  font-weight: lighter;
   text-transform: uppercase;
+  color: #353535;
 }
 
 h2 {
-  font-family: 'PP Neue Montreal Mono Book', 'Tahoma', sans-serif;
-  font-weight: 100;
-  text-transform: uppercase;
+  font-family: "Noto Sans HK", 'Courier New', sans-serif;
+  font-weight: 200;
+  color: #353535;
 }
 
 h3 {
-  font-family: 'PP Neue Montreal Mono Book', 'Tahoma', sans-serif;
-  font-weight: 100;
+  font-family: "Noto Sans HK", 'Courier New', sans-serif;
+  font-weight: 200;
   margin-top: 1rem;
-  text-transform: uppercase;
+  color: #353535;
+
 }
 
 h4 {
-  font-family: 'PP Neue Montreal Mono Book', 'Tahoma', sans-serif;
+  font-family: "Noto Sans HK", 'Courier New', sans-serif;
   text-transform: uppercase;
-  font-weight: 100;
+  font-weight: 200;
   margin-bottom: 0.25rem;
+  color: #353535;
 }
 
 p {
-  font-family: 'PP Supply Mono','Courier New', sans-serif;
-  font-weight: 100;
+  font-family: "Noto Sans HK", 'Courier New', sans-serif;
+  font-weight: 300;
   margin-top: 0;
   max-width: 60rem;
+  color: #353535;
+
+}
+
+li {
+  font-family: "Noto Sans HK", 'Courier New', sans-serif;
+  font-weight: 200;
+  margin-top: 0;
+  max-width: 60rem;
+  color: #353535;
 
 }
 
 .p-product{
-  font-family: 'PP Supply Mono','Courier New', sans-serif;
-  font-weight: 100;
+  font-family: "Noto Sans HK", 'Courier New', sans-serif;
+  font-weight: 200;
   margin-top: 0;
   max-width: 30rem;
 }
 
 a{
-
-  color: #FFCB7D;
-
   color: #F8B5D5;
-
   font-weight: bold;
   text-decoration: none;
 }
@@ -87,13 +96,15 @@ a:hover{
   transition-duration: 0.5s;
 }
 nav{
+  font-family: "Noto Sans HK", 'Courier New', sans-serif;
+  font-weight: 200;
   display: flex;
   flex-direction: row;
   justify-content: center;
 
 }
 nav a:hover, nav a:focus {
-  color: #353535;
+  color: #727272;
 }
 
 .nav a {
@@ -243,23 +254,24 @@ code {
 
 /* Styling for the navigation button */
 .defaultButton {
-  font-family: 'PP Neue Montreal Mono', 'Impact', sans-serif;
-    color: #FF9ECD;
-    border: 2px solid;
-    background:none;
+  font-family: "Noto Sans HK", 'Courier New', sans-serif;
+  font-weight: 400;
+  color: #FF9ECD;
+  border: 2px solid;
+  background:none;
   border-color: #FF9ECD;
-      width: 15rem;
+  width: 15rem;
   padding: 10px;
   margin: 8px 0;
-    font-size: 15px;
+  font-size: 1rem;
 }
 
 
 
 .defaultButton:hover, .defaultButton:focus {
-    background-color: #FF9ECD;
+  background-color: #FF9ECD;
   border: 3px solid;
-    border-color: #FF9ECD;
+  border-color: #FF9ECD;
 
   color: #ffffff;
   width: 15rem;
@@ -270,10 +282,9 @@ code {
 }
 
 .navSubmit{
-  font-family: 'PP Neue Montreal Mono', 'Impact', sans-serif;
-
+  font-family: "Noto Sans HK", 'Courier New', sans-serif;
+  font-weight: 200;
   background-color: white;
-
   background-color: #F8B5D5;
 
   border: 2px solid #F8B5D5;
@@ -291,9 +302,10 @@ code {
 }
 
 .navReset{
-  font-family: 'PP Neue Montreal Mono', 'Impact', sans-serif;
+  font-family: "Noto Sans HK", 'Courier New', sans-serif;
+  font-weight: 200;
   border: 2px solid #F8B5D5;
-    background-color: white;
+  background-color: white;
   color: #F8B5D5;
   width: 15rem;
   padding: 10px;
@@ -343,22 +355,13 @@ input[type=text], input[type=email], input[type=tel]{
 }
 
 input[type=text]:focus, .paymentFormInput:focus {
-<<<<<<< HEAD
-  color: #FFCB7D;
-  border: 3px solid #FFCB7D;
-=======
   color: #F8B5D5;
   border: 3px solid #F8B5D5;
->>>>>>> b5cca295c485b99b11d0e2e57c29d10ac8407161
   transition-duration: 0.5s;
 }
 
 .paymentFormSubmit:focus{
-<<<<<<< HEAD
-  background-color: #FFCB7D;
-=======
   background-color: #F8B5D5;
->>>>>>> b5cca295c485b99b11d0e2e57c29d10ac8407161
   color: #ffffff;
   transition-duration: 0.5s;
 }
@@ -420,39 +423,16 @@ input[type=text]:focus, .paymentFormInput:focus {
 
 
 @font-face {
-    font-family: 'PP Supply Mono';
-    src: url('/fonts/PPSupplyMono-Ultralight.woff2') format('woff2'),
-        url('/fonts/PPSupplyMono-Ultralight.woff') format('woff'),
-        url('/fonts/  PPSupplyMono-Ultralight.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'PP Neue Montreal Mono';
-    src: url('/fonts/PPNeueMontrealMono-Bold.woff2') format('woff2'),
-        url('/fonts/PPNeueMontrealMono-Bold.woff') format('woff'),
-        url('/fonts/PPNeueMontrealMono-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'PP Neue Montreal Mono Book';
-    src: url('/fonts/PPNeueMontrealMono-Book.woff2') format('woff2'),
-        url('/fonts/PPNeueMontrealMono-Book.woff') format('woff'),
-        url('/fonts/PPNeueMontrealMono-Book.ttf') format('truetype');
-    font-weight: normal;
+    font-family: 'PP Right Didone - Spatial Fine';
+    src: url('../fonts/PPRightDidone-SpatialFine.woff2') format('woff2'),
+        url('../fonts/PPRightDidone-SpatialFinet.woff') format('woff'),
+        url('../fonts/PPRightDidone-SpatialFine.ttf') format('truetype');
+    font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
 
 .profileName{
-<<<<<<< HEAD
-  color: #FFCB7D;
-=======
   color: #F8B5D5;
->>>>>>> b5cca295c485b99b11d0e2e57c29d10ac8407161
+
 }
