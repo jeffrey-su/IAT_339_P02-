@@ -3,6 +3,7 @@
   Default styling for the style guide
 */
 body {
+  font-family: "Noto Sans HK", 'Courier New', sans-serif;
   padding: 2rem;
     background: #FAFAFA;
     color: #353535;
@@ -86,6 +87,8 @@ li {
 }
 
 a{
+  font-family: "Noto Sans HK", 'Courier New', sans-serif;
+  font-weight: 200;
   color: #F8B5D5;
   font-weight: bold;
   text-decoration: none;
@@ -96,8 +99,6 @@ a:hover{
   transition-duration: 0.5s;
 }
 nav{
-  font-family: "Noto Sans HK", 'Courier New', sans-serif;
-  font-weight: 200;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -108,6 +109,8 @@ nav a:hover, nav a:focus {
 }
 
 .nav a {
+  font-family: "Noto Sans HK", 'Courier New', sans-serif;
+  font-weight: 200;
   padding: 1rem;
   color: #F8B5D5;
 }
@@ -117,6 +120,11 @@ nav a:hover, nav a:focus {
   padding-left: 1rem;
 }
 
+.mainNav a{
+  font-family: "Noto Sans HK", 'Courier New', sans-serif;
+  font-weight: 200;
+  padding: 0.5rem;
+}
 .titleNav{
   display: flex;
   flex-direction: row;
@@ -137,8 +145,12 @@ nav a:hover, nav a:focus {
 }
 
 .headerLink{
+  font-family: 'PP Right Didone - Spatial Fine', 'Garamond', serif;
+  font-size: 2.5rem;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: #353535;
   font-size: 100px;
-  color: black;
 }
 
 code {
@@ -255,7 +267,7 @@ code {
 /* Styling for the navigation button */
 .defaultButton {
   font-family: "Noto Sans HK", 'Courier New', sans-serif;
-  font-weight: 400;
+  font-weight: 200;
   color: #FF9ECD;
   border: 2px solid;
   background:none;
