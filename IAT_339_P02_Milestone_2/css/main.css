@@ -4,15 +4,26 @@
 */
 body {
   font-family: "Noto Sans HK", 'Courier New', sans-serif;
-  padding: 2rem;
-    background: #FAFAFA;
-    color: #353535;
+  font-weight: 400;
+  background: #FAFAFA;
+  color: #353535;
+  margin: 0;
 
 }
 
 *{
-  border-radius: 5px;
+  /* border: black 0.5px solid; */
+  overflow-x: hidden;
 }
+
+.landingHero{
+  width: auto;
+}
+
+.landingHero img{
+  display: block;
+}
+
 
 .infoLink{
     color: #FF9ECD;
@@ -126,13 +137,21 @@ nav a:hover, nav a:focus {
 
 .mainNav a{
   font-family: "Noto Sans HK", 'Courier New', sans-serif;
-  font-weight: 200;
+  font-weight: 400;
   padding: 0.5rem;
 }
 .titleNav{
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.homeNavLink{
+  color: #353535;
+}
+
+.landingHero{
+  padding-top: 5rem;
 }
 
 .products{
