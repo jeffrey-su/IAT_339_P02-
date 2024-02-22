@@ -22,6 +22,19 @@ body {
 
 .landingHero img{
   display: block;
+    
+}
+
+.btn{
+    cursor: pointer;
+    width: 14rem;
+    height: 4rem;
+    padding: 1rem; 
+    border: 3px solid #FF7EBC;
+    border-radius: 0.5rem;
+    background: white;
+    margin-right: 1rem;
+    
 }
 
 
@@ -170,6 +183,7 @@ nav a:hover, nav a:focus {
 .imgDetail{
     border:none;
     border-radius: 25px;
+    flex-shrink: 0
 }
 
 .headerLink{
@@ -300,6 +314,7 @@ code {
   border: 2px solid;
   background:none;
   border-color: #FF9ECD;
+    border-radius: 0.5rem; 
   width: 15rem;
   padding: 10px;
   margin: 8px 0;
@@ -490,8 +505,6 @@ input[type=text]:focus, .paymentFormInput:focus {
     grid-template-columns: 1fr 1fr;
 	grid-template-rows: auto;
     grid-auto-flow: row;
-    border-top: solid;
-    border-width: 2px;
     padding:2.5rem;
 }
 
