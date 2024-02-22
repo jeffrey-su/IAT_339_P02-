@@ -13,7 +13,7 @@ body {
 
 *{
   /* border: black 0.5px solid; */
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .landingHero{
@@ -21,20 +21,9 @@ body {
 }
 
 .landingHero img{
-  display: block;
-    
-}
-
-.btn{
-    cursor: pointer;
-    width: 14rem;
-    height: 4rem;
-    padding: 1rem; 
-    border: 3px solid #FF7EBC;
-    border-radius: 0.5rem;
-    background: white;
-    margin-right: 1rem;
-    
+  display:block;
+  width: auto;
+  max-width: 100%;
 }
 
 
@@ -314,7 +303,7 @@ code {
   border: 2px solid;
   background:none;
   border-color: #FF9ECD;
-    border-radius: 0.5rem; 
+    border-radius: 0.5rem;
   width: 15rem;
   padding: 10px;
   margin: 8px 0;
