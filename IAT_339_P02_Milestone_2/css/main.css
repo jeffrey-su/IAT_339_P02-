@@ -484,7 +484,7 @@ input[type=text]:focus, .paymentFormInput:focus {
 
 .grid.add-gutters {
     grid-column-gap: 2rem;
-	grid-row-gap: 0.25rem;
+	grid-row-gap: 5rem;
 }
 
 .grid {
@@ -500,6 +500,36 @@ input[type=text]:focus, .paymentFormInput:focus {
 
 .sectionGap{
     border-top: solid 2px #E3E3E3;
-    padding: 3rem;
+    padding: 2.5rem;
     margin-top: 2rem;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+      
+}
+
+
+.box {
+    margin: 3rem;
+}
+
+.imgDetail2{
+    border:none;
+    border-radius: 25px;
+    flex-shrink: 0
+}
+
+.imgDetail2:hover, .imgDetail2:focus{
+    border: solid 2px #FF7EBC;
+    filter: drop-shadow(-4px 2px 12px #000000);
+    
+}
+
+.returnLink{
+    text-align: center;
 }
