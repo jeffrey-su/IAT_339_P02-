@@ -49,10 +49,9 @@ section{
 }
 
 h1{
-  font-family: 'PP Right Didone - Spatial Fine', 'Garamond', serif;
-  font-size: 2.5rem;
-  font-weight: lighter;
-  text-transform: uppercase;
+  font-family: 'Noto Sans HK', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
   color: #353535;
 }
 
@@ -563,7 +562,8 @@ input[type=text]:focus, .paymentFormInput:focus {
 }
 
 .grid.add-gutters {
-    grid-column-gap: 2rem;
+    
+    grid-column-gap: 1rem;
 	grid-row-gap: 5rem;
 }
 
@@ -576,6 +576,10 @@ input[type=text]:focus, .paymentFormInput:focus {
 	grid-template-rows: auto;
     grid-auto-flow: row;
     padding:2.5rem;
+}
+
+.column{
+    padding-top:2rem;
 }
 
 .sectionGap{
@@ -593,6 +597,20 @@ input[type=text]:focus, .paymentFormInput:focus {
 
 }
 
+.wrapper2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:left;
+    text-align: left;
+    padding-left: 2.5rem;
+
+}
+
+.box2{
+    padding-left: 12.5rem;
+    
+}
 
 .box {
     margin: 3rem;
@@ -605,6 +623,7 @@ input[type=text]:focus, .paymentFormInput:focus {
 }
 
 .imgDetail2:hover, .imgDetail2:focus{
+    cursor: pointer; 
     border: solid 2px #CC6C9A;
     filter: drop-shadow(-4px 2px 12px #000000);
 
@@ -612,4 +631,11 @@ input[type=text]:focus, .paymentFormInput:focus {
 
 .returnLink{
     text-align: center;
+}
+
+.returnLink:hover, .returnLink:focus{
+    cursor: pointer;
+    color: #FF7EBC;
+    transition: 0.5s;
+    
 }
