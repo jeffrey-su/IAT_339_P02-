@@ -31,7 +31,6 @@ body {
   border-top-style: solid;
   border-top-color: #727272;
 }
-
 section{
     margin-bottom: 4rem;
 }
@@ -193,9 +192,9 @@ nav a:hover, nav a:focus {
   font-family: "Noto Sans HK", 'Courier New', sans-serif;
   font-weight: 200;
   font-size: 1vw;
-  color: #CC6C9A;
+  color: #FAFAFA;
   border: 2px #CC6C9A solid;
-  background:#FAFAFA;
+  background:#CC6C9A;
   border-radius: 0.5rem;
   width: 10vw;
   padding: 8px;
@@ -359,8 +358,8 @@ input[type=text]:focus, .paymentFormInput:focus {
 }
 
 .paymentFormSubmit:focus{
-  background-color: #CC6C9A;
-  color: #ffffff;
+  background-color: #FAFAFA;
+  color: #CC6C9A;
   transition-duration: 0.5s;
 }
 .paymentForm{
@@ -427,7 +426,7 @@ input[type=text]:focus, .paymentFormInput:focus {
 }
 
 .wrapper {
-display: flex; 
+display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 justify-content: space-around;
@@ -612,7 +611,7 @@ justify-content: space-around;
      font-size: 3vw;
    }
 
-   footer p, .wrapper2 p, .checkoutInfo p{
+   footer p, .wrapper2 p, .checkoutInfo p, .wrapper p{
      font-size: 5vw;
    }
    footer img{
