@@ -577,6 +577,23 @@ input[type=text]:focus, .paymentFormInput:focus {
 .productBorder h3{
   padding-left: 1rem;
 }
+
+/* About Page--------------------------------------------------------------------------------------- */
+
+.aboutCopy{
+  max-width: 50vw;
+  font-size: 1vw;
+}
+
+.aboutNavLink{
+  color: #353535;
+}
+
+/* Contact Page --------------------------------------------------------------------------------- */
+
+.contactNavLink{
+  color: #353535;
+}
 /* media queries --------------------------------------------------------------------------------*/
  @media (width < 1050px) and (orientation: portrait) {
     .hero2Content, .hero3Content, .hero4Content {
