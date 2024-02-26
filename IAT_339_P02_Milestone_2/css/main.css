@@ -182,6 +182,7 @@ nav a:hover, nav a:focus {
   width: 10vw;
   padding: 8px;
   margin: 8px 0;
+    cursor: pointer;
 }
 
 
@@ -433,19 +434,25 @@ input[type=text]:focus, .paymentFormInput:focus {
 .wrapper {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
 
 }
 
+@media screen and (max-width: 80rem) {
+    .wrapper {
+        display: block;
+    }
+}
+
 .box {
-    margin: 3rem;
+    margin: 1rem;
 }
 
 .imgDetail2{
     border:none;
-    border-radius: 25px;
+    border-radius: 20px;
     flex-shrink: 0
 }
 
@@ -456,7 +463,13 @@ input[type=text]:focus, .paymentFormInput:focus {
 }
 
 .returnLink{
+    cursor:pointer; 
     text-align: center;
+}
+
+.returnLink:hover, .returnLink:focus {
+    color: #FF7EBC; 
+    transition:0.5s; 
 }
 
 .logotype{
@@ -481,16 +494,18 @@ input[type=text]:focus, .paymentFormInput:focus {
 .wrapper2 {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content:left;
-    text-align: left;
-    padding-left: 2.5rem;
+    flex-wrap: wrap;
+    justify-content: space-around; 
 
 }
 
-.box2{
-    padding-left: 12.5rem;
+@media (max-width: 80rem){
+    .grid.two-column{
+        grid-template-columns: 1fr;
+		grid-template-rows: auto;
+        grid-auto-flow: row;
 
+    } 
 }
 
 .boxA{
@@ -565,6 +580,11 @@ input[type=text]:focus, .paymentFormInput:focus {
   margin: 1vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 8px;
+}
+
+.productBorder:hover, .productBorder:focus{
+    box-shadow: 0 4px 8px 0 rgba(255, 126, 188, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
 }
 
 .productBorder img{
