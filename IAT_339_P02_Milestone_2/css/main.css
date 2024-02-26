@@ -605,7 +605,7 @@ input[type=text]:focus, .paymentFormInput:focus {
      font-size: 5vw;
    }
 
-   .hero1Content p, .hero2Content p, .hero3Content p, .hero4Content p {
+   .hero1Content p, .hero2Content p, .hero3Content p, .hero4Content p{
      color: #FAFAFA;
      font-size: 3vw;
    }
@@ -632,6 +632,11 @@ input[type=text]:focus, .paymentFormInput:focus {
      font-size: 2vw;
      font-weight: bold;
      width: 10rem;
+   }
+
+   .aboutCopy{
+       max-width: 50vw;
+       font-size: 2vw;
    }
  }
 
