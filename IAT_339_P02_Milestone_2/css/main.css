@@ -20,7 +20,7 @@ body {
   width: auto;
 }
 
-.landingHero img{
+.landingHero img, .productListingHero img{
   display:block;
   width: auto;
   max-width: 100%;
@@ -48,18 +48,11 @@ section{
     margin-bottom: 4rem;
 }
 
-.logotype{
-    font-family: 'PP Right Didone - Spatial Fine', 'Garamond', serif;
-  font-size: 2rem;
-  font-weight: bold;
-  color: #353535;
-    
-}
-
 h1{
-  font-family: 'Noto Sans HK', sans-serif;
-  font-size: 2rem;
-  font-weight: bold;
+  font-family: 'PP Right Didone - Spatial Fine', 'Garamond', serif;
+  font-size: 2.5rem;
+  font-weight: lighter;
+  text-transform: uppercase;
   color: #353535;
 }
 
@@ -95,7 +88,8 @@ p {
   max-width: 60rem;
   color: #353535;
     max-width: 30rem;
-    font-size: auto;
+    font-size: 2vw;
+
 
 }
 
@@ -170,31 +164,19 @@ nav a:hover, nav a:focus {
 
 .products{
   margin-top: 5rem;
-  padding-left: 10vw;
-  padding-right: 10vw;
+  padding-left: 20vw;
+  padding-right: 20vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-    column-gap: 3rem;
-    grid-row-gap: 3rem;
-}
-
-.productBorder{
-    cursor: pointer;
-    padding: 1.5rem;
-    border-radius: 15px;
-    box-shadow: rgba(99, 99, 99, 0.4) 0px 2px 8px 0px; 
-}
-
-.productBorder:hover, .productBorder:focus{
-    padding: 1.5rem;
-    border-radius: 15px;
-    box-shadow: rgba(248, 181, 213, 1) 0px 2px 8px 0px; 
 }
 
 .product img{
   padding: 5rem;
-    
+}
+
+.productBorder{
+  padding: 1vw;
 }
 
 .imgDetail{
@@ -211,16 +193,9 @@ nav a:hover, nav a:focus {
   color: #353535;
   font-size: 100px;
 }
- 
-code {
-  background-color: #EEE;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-  display: block;
-}
+
+
 .imgLink{
-    border-radius: 10px;
 }
 .imgLink:hover{
   opacity: 70%;
@@ -333,7 +308,7 @@ code {
   border: 2px #CC6C9A solid;
   background:#FAFAFA;
   border-radius: 0.5rem;
-  width: 15rem;
+  width: 13vw;
   padding: 8px;
   margin: 8px 0;
 }
@@ -341,13 +316,12 @@ code {
 
 
 .defaultButton:hover, .defaultButton:focus {
-    cursor: pointer;
   background-color: #CC6C9A;
   border: 3px solid;
   border-color: #CC6C9A;
 
   color: #ffffff;
-  width: 15rem;
+  width: 13vw;
   padding: 8px;
   margin: 8px 0;
   transition-duration: 0.5s;
@@ -473,9 +447,12 @@ footer{
   align-self: flex-start;
 }
 /*
-  TEXT ELEMENTS -------------------
+  Product Listing Page -------------------
 */
 
+.productListingHero{
+  width: 100vw;
+}
 
 
 
@@ -556,7 +533,9 @@ input[type=text]:focus, .paymentFormInput:focus {
 
 .paymentFormBox{
   display: grid;
+  grid-gap: 1rem;
   grid-template-columns: 50vw, 50vw;
+  padding-top: 5rem;
   margin: 5rem;
 }
 
@@ -569,25 +548,13 @@ input[type=text]:focus, .paymentFormInput:focus {
   border-top: 3px solid #727272;
 }
 
-
-@font-face {
-    font-family: 'PP Right Didone - Spatial Fine';
-    src: url('../fonts/PPRightDidone-SpatialFine.woff2') format('woff2'),
-        url('../fonts/PPRightDidone-SpatialFinet.woff') format('woff'),
-        url('../fonts/PPRightDidone-SpatialFine.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
 .profileName{
   color: #CC6C9A;
 
 }
 
 .grid.add-gutters {
-    
-    grid-column-gap: 1rem;
+    grid-column-gap: 2rem;
 	grid-row-gap: 5rem;
 }
 
@@ -602,17 +569,6 @@ input[type=text]:focus, .paymentFormInput:focus {
     padding:2.5rem;
 }
 
-.column{
-    padding-top:2rem;
-}
-
-.sectionGap{
-    border-top: solid 2px #E3E3E3;
-    padding: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
 .wrapper {
     display: flex;
     flex-direction: row;
@@ -622,42 +578,9 @@ input[type=text]:focus, .paymentFormInput:focus {
 
 }
 
-.wrapper2 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content:left;
-    text-align: left;
-    padding-left: 2.5rem;
-
-}
-
-.box2{
-    padding-left: 12.5rem;
-    
-}
 
 .box {
     margin: 3rem;
-}
-
-.boxA{
-}
-
-.boxB{
-    padding-left: 3vw;
-    align-items: baseline;
-}
-
-.removeLink{
-    color: #CC6C9A;
-    text-decoration: underline;
-    margin-top: 10vw;
-}
-
-.removeLink:hover, .removeLink:focus{
-    color:#CC6C9A;
-    text-decoration: none;
 }
 
 .imgDetail2{
@@ -667,31 +590,44 @@ input[type=text]:focus, .paymentFormInput:focus {
 }
 
 .imgDetail2:hover, .imgDetail2:focus{
-    cursor: pointer; 
-    border: solid 3px #CC6C9A;
-    box-shadow: rgba(0, 0, 0, 0.7) 0px 2px 8px 0px;
+    border: solid 2px #CC6C9A;
+    filter: drop-shadow(-4px 2px 12px #000000);
 
-}
-
-.checkoutImg{
-    border:none;
-    border-radius: 20px;
-    flex-shrink: 0
-}
-
-.checkoutInfo{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
 }
 
 .returnLink{
     text-align: center;
 }
 
-.returnLink:hover, .returnLink:focus{
-    cursor: pointer;
-    color: #FF7EBC;
-    transition: 0.5s;
-    
+/* media queries */
+ @media (width < 1000px) and (orientation: portrait) {
+    .hero2Content, .hero3Content, .hero4Content {
+     line-height: 1;
+     max-width: 60vw;
+   }
+   .hero1Content h2, .hero2Content h2, .hero3Content h2, .hero4Content h2 {
+     color: #FAFAFA;
+     font-size: 5vw;
+   }
+
+   .hero1Content p, .hero2Content p, .hero3Content p, .hero4Content p {
+     color: #FAFAFA;
+     font-size: 3vw;
+   }
+
+   .defaultButton{
+     font-size: 2vw;
+     font-weight: bold;
+   }
+ }
+
+
+@font-face {
+    font-family: 'PP Right Didone - Spatial Fine';
+    src: url('../fonts/PPRightDidone-SpatialFine.woff2') format('woff2'),
+        url('../fonts/PPRightDidone-SpatialFinet.woff') format('woff'),
+        url('../fonts/PPRightDidone-SpatialFine.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
