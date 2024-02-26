@@ -192,7 +192,7 @@ nav a:hover, nav a:focus {
   border-color: #CC6C9A;
 
   color: #ffffff;
-  width: 11vw;
+  width: 10vw;
   padding: 8px;
   margin: 8px 0;
   transition-duration: 0.5s;
@@ -202,42 +202,50 @@ nav a:hover, nav a:focus {
 .navSubmit{
   font-family: "Noto Sans HK", 'Courier New', sans-serif;
   font-weight: 200;
-  background-color: white;
-  background-color: #CC6C9A;
-
-  border: 2px solid #CC6C9A;
-  color: white;
-  width: 15rem;
-  padding: 10px;
+  font-size: 1vw;
+  color: #CC6C9A;
+  border: 2px #CC6C9A solid;
+  background:#FAFAFA;
+  border-radius: 0.5rem;
+  width: 10vw;
+  padding: 8px;
   margin: 8px 0;
 }
 
 .navSubmit:focus, .navSubmit:hover {
-  color: #CC6C9A;
-  background-color: #ffffff;
-  border: 2px solid #CC6C9A;
+  background-color: #CC6C9A;
+  border: 3px solid;
+  border-color: #CC6C9A;
+
+  color: #ffffff;
+  width: 10vw;
+  padding: 8px;
+  margin: 8px 0;
   transition-duration: 0.5s;
 }
 
 .navReset{
   font-family: "Noto Sans HK", 'Courier New', sans-serif;
   font-weight: 200;
-  border: 2px solid #CC6C9A;
-  background-color: white;
+  font-size: 1vw;
   color: #CC6C9A;
-  width: 15rem;
-  padding: 10px;
+  border: 2px #CC6C9A solid;
+  background:#FAFAFA;
+  border-radius: 0.5rem;
+  width: 10vw;
+  padding: 8px;
   margin: 8px 0;
 }
 
 .navReset:focus, .navReset:hover {
-  color: white;
   background-color: #CC6C9A;
-  border: 1px solid white;
-=======
-  color: #CC6C9A;
-  background-color: #CC6C9A;
-  border: 1px solid #CC6C9A;
+  border: 3px solid;
+  border-color: #CC6C9A;
+
+  color: #ffffff;
+  width: 10vw;
+  padding: 8px;
+  margin: 8px 0;
   transition-duration: 0.5s;
 }
 
@@ -366,19 +374,9 @@ input[type=text]:focus, .paymentFormInput:focus {
   transition-duration: 0.5s;
 }
 .paymentForm{
-  grid-column: 2 / 2;
-  grid-row: 1;
+
 }
 
-.paymentFormBox{
-  padding-bottom: 2rem;
-  border-top-width: 0.15rem;
-  border-top-color: #727272;
-
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: 50vw, 50vw;
-}
 .checkoutBox{
   padding-bottom: 2rem;
   border-top-width: 0.15rem;
@@ -386,8 +384,7 @@ input[type=text]:focus, .paymentFormInput:focus {
   border-top-color: #727272;
 
   display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: 50vw, 50vw;
+
 }
 .checkoutCart{
   margin-top: 2rem;
@@ -400,16 +397,12 @@ input[type=text]:focus, .paymentFormInput:focus {
 }
 
 .paymentFormBox{
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: 50vw, 50vw;
-  padding-top: 5rem;
-  margin: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .paymentFormPage{
-  grid-column: 2 / 2;
-  grid-row: 1;
 }
 
 .subtotal{
@@ -579,7 +572,7 @@ input[type=text]:focus, .paymentFormInput:focus {
 }
 
 .productButton{
-    padding-left: 1rem;
+    padding-left: 1vw;
 }
 .productBorder h3{
   padding-left: 1rem;
@@ -612,13 +605,13 @@ input[type=text]:focus, .paymentFormInput:focus {
      display: block;
    }
 
-   .defaultButton{
+   .defaultButton, .navSubmit, .navReset{
      font-size: 2vw;
      font-weight: bold;
      width: 10rem;
    }
 
-   .defaultButton:hover, .defaultButton:focus{
+   .defaultButton:hover, .defaultButton:focus, .navSubmit:hover, .navSubmit:focus, .navReset:hover, .navReset:focus{
      font-size: 2vw;
      font-weight: bold;
      width: 10rem;
