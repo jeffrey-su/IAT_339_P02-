@@ -427,11 +427,10 @@ input[type=text]:focus, .paymentFormInput:focus {
 }
 
 .wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
+display: flex; 
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
 
 }
 
@@ -490,7 +489,9 @@ input[type=text]:focus, .paymentFormInput:focus {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    text-align: center;
 }
+
 
 .boxB{
     padding-left: 3vw;
