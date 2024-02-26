@@ -15,9 +15,6 @@ body {
 
 }
 
-
-
-
 .infoLink{
     color: #CC6C9A;
     text-decoration: underline;
@@ -78,10 +75,8 @@ p {
   margin-top: 0;
   max-width: 60rem;
   color: #353535;
-    max-width: 30rem;
-    font-size: 2vw;
-
-
+  max-width: 30rem;
+  font-size: 1vw;
 }
 
 li {
@@ -158,9 +153,6 @@ nav a:hover, nav a:focus {
   font-size: 100px;
 }
 
-
-.imgLink{
-}
 .imgLink:hover{
   opacity: 70%;
 }
@@ -184,8 +176,6 @@ nav a:hover, nav a:focus {
   margin: 8px 0;
 }
 
-
-
 .defaultButton:hover, .defaultButton:focus {
   background-color: #CC6C9A;
   border: 3px solid;
@@ -196,7 +186,6 @@ nav a:hover, nav a:focus {
   padding: 8px;
   margin: 8px 0;
   transition-duration: 0.5s;
-
 }
 
 .navSubmit{
@@ -415,14 +404,20 @@ input[type=text]:focus, .paymentFormInput:focus {
 }
 
 .grid.add-gutters {
-    grid-column-gap: 2rem;
+  grid-column-gap: 2rem;
 	grid-row-gap: 5rem;
 }
 
 .grid {
 	display: grid;
 }
-
+.productDetailBox{
+  border-top: solid 2px #E3E3E3;
+  padding: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+}
 .grid.two-column {
     grid-template-columns: 1fr 1fr;
 	grid-template-rows: auto;
@@ -480,20 +475,8 @@ input[type=text]:focus, .paymentFormInput:focus {
 
 .wrapper2 {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content:left;
-    text-align: left;
-    padding-left: 2.5rem;
-
-}
-
-.box2{
-    padding-left: 12.5rem;
-
-}
-
-.boxA{
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .boxB{
@@ -595,7 +578,7 @@ input[type=text]:focus, .paymentFormInput:focus {
   color: #353535;
 }
 /* media queries --------------------------------------------------------------------------------*/
- @media (width < 1050px) and (orientation: portrait) {
+ @media (width < 1110px){
     .hero2Content, .hero3Content, .hero4Content {
      line-height: 1;
      max-width: 60vw;
@@ -610,7 +593,7 @@ input[type=text]:focus, .paymentFormInput:focus {
      font-size: 3vw;
    }
 
-   footer p{
+   footer p, .wrapper2 p, .checkoutInfo p{
      font-size: 5vw;
    }
    footer img{
