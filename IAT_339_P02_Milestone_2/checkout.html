@@ -17,126 +17,137 @@
 
   </head>
 
-  <body>
-
-    <h1 class="titleNav"><a class="headerLink" href="productListing.html">Luna</a></h1>
-    <nav >
-      <div class="mainNav">
-        <a href="index.html" > HOME </a>
-        <a href="productListing.html" > PRODUCTS </a>
-        <a href="index.html" > ABOUT </a>
-        <a href="index.html" > CONTACT </a>
-        <a href="index.html" > CART </a>
-      </div>
-    </nav>
-
-    <section class="paymentFormBox">
-
-      <div class="checkoutCart">
-          <h2>Cart</h2>
-          <img src="img/sesameProduct3199x3199.png" alt="Sesame Snow Skin Mooncake" width="100" height="100">
-          <p>Sesame Snow Skin Mooncake [1]   <a href="#">-</a> | <a href="#">+</a></p>
-          <h3>$7.00</h3>
-          <img src="img/sakuraProduct3199x3199.png" alt="Sakura Snow Skin Mooncake" width="100" height="100">
-          <p>Sakura Snow Skin Mooncake [2]   <a href="#">-</a> | <a href="#">+</a></p>
-            <h3>$12.00</h3>
-          <div class="subtotal">
-            <h2>Subtotal (3 Items) : $19.00 </h2>
-
-            <label for="checkoutReset"></label>
-            <input class="navReset" type="button" name="checkoutReset" value="Clear Cart">
-
+    <body>
+        
+        <h1 class="titleNav"><a class="headerLink" href="index.html">LUNA</a></h1>
+      <nav>
+          <div class="mainNav">
+              <a href="index.html" > HOME </a>
+              <a href="productListing.html" > PRODUCTS </a>
+              <a href="index.html" > ABOUT </a>
+              <a href="index.html" > CONTACT </a>
+              <a href="checkout.html" > CART </a>
+              
           </div>
-        </div>
-
-      <form class="paymentFormPage" action="index.html" method="post">
-
-        <h2>Shipping address</h2>
-
-        <div class="paymentFormField">
-          <label for="paymentFirstName"></label>
-          <input id="paymentFormInput" type="text" name="paymentFirstName" placeholder="First name" >
-        </div>
-
-        <div class="paymentFormField">
-          <label for="paymentLastName"></label>
-          <input id="paymentFormInput" type="text" name="paymentLastName" placeholder="Last name">
-        </div>
-
-        <div class="paymentFormField">
-          <label for="paymentAddress"></label>
-          <input id="paymentFormInput" type="text" name="paymentAddress" placeholder="Address">
-        </div>
-
-        <div class="paymentFormField">
-          <label for="paymentApartment"></label>
-          <input id="paymentFormInput" type="text" name="paymentApartment" placeholder="Apartment, suite (optional)">
-        </div>
-
-        <div class="paymentFormField">
-          <label for="paymentCity"></label>
-          <input id="paymentFormInput" type="text" name="paymentCity" placeholder="City">
-        </div>
-
-        <div class="paymentFormField">
-          <label for="paymentProvince"></label>
-            <select class="paymentProvince" name="paymentProvince" value="Province">
-              <option value="select">Province</option>
-              <option value="britishColumbia">British Columbia</option>
-              <option value="manitoba">Manitoba</option>
-              <option value="newBrunswick">New Brunswick</option>
-              <option value="newfoundland">Newfoundland</option>
-              <option value="northwestTerritories">Northwest Territories</option>
-              <option value="novaScotia">Nova Scotia</option>
-              <option value="nunavut">Nunavut</option>
-              <option value="ontario">Ontario</option>
-              <option value="pei">Prince Edward Island</option>
-              <option value="quebec">Quebec</option>
-              <option value="saskatchewan">Saskatchewan</option>
-              <option value="yukon">Yukon</option>
-            </select>
-
-            <label for="paymentPostalCode"></label>
-            <input class="paymentFormPostalCode" type="text" name="paymentPostalCode" placeholder="Postal Code">
-        </div>
-
-        <h2>Contact</h2>
-        <div id="paymentFormField">
+      </nav>
+        
+        <section class="sectionGap">
+            <h1>
+              YOUR CART
+            </h1>
+            <div class="wrapper2">
+                <div class="boxA">
+                    <img src="img/avoProduct500x500.jpg" class="checkoutImg" width="300" height="300" alt="">
+                </div>
+                <div class="boxB">
+                    <h1>D24 Black Gold Mooncake</h1>
+                    <p>
+                        <strong>
+                            $12.99 / half dozen
+                        </strong>
+                    </p>
+                    <p>
+                        <strong>
+                            Quantity: 1
+                        </strong>
+                    </p>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="#" class="removeLink">Remove</a>        
+                </div>
+            </div>
+        </section>
+        
+        <section class="sectionGap">
+            <h1>
+              YOUR CART
+            </h1>
+            <div class="wrapper2">
+                <div class="boxA">
+                    <img src="img/lotusProduct500x500.png" class="checkoutImg" width="300" height="300" alt="">
+                </div>
+                <div class="boxB">
+                    <h1>Salted Egg Yolk Mooncake</h1>
+                    <p>
+                        <strong>
+                            $12.99 / half dozen
+                        </strong>
+                    </p>
+                    <p>
+                        <strong>
+                            Quantity: 1
+                        </strong>
+                    </p>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="#" class="removeLink">Remove</a>        
+                </div>
+            </div>
+        </section>
+        
+        <section class="sectionGap">
+            <div class="checkoutInfo">
+                <p>
+                    <strong>
+                        Cart Total: $25.00
+                    </strong> 
+                </p>
+                
+                <p>
+                    <strong>
+                        Shipping Fee: TBD
+                    </strong> 
+                </p>
+                <p>
+                    <strong>
+                        Estimated Tax:TBD
+                    </strong> 
+                </p>
+                <p>
+                    <strong>
+                        Subtotal: $25.00
+                    </strong> 
+                </p>
+                
+                <a href="payment.html" ><input class="defaultButton" type="button" name="addCart" value="Checkout" ></a>
+                <p>OR <a href="productListing.html" class="infoLink">CONTINUE SHOPPING</a></p>
+                
+            </div>
+            
+        </section>
+        
+    
+    
+    
+    
+    
+    
+    </body>
+    
+    <footer>
+          
+    <section class="footer">
+      <h1 class='logotype'>LUNA</h1>
+      <section class="footerContent">
+        <div class="footerSocials">
+          <p>Subscribe to our newsletter:</p>
           <label for="emailInput"></label>
-          <input type="email" name="emailInput" placeholder="Email Address">
-          <div id="newsletter">
-            <label for="paymentNewsLetterCheckbox">Email me with a newsletter and offers</label>
-            <input type="checkbox" id="paymentNewsLetterCheckbox" name="newsletterCheck">
-          </div>
+          <input type="email" name="newsletter" placeholder="Enter your email">
         </div>
-
-        <div id="paymentFormField">
-          <label for="paymentPhone"></label>
-          <input type="tel" name="paymentPhone" placeholder="Phone">
+        <div class="footerInfo">
+          <a href="#"><p>Privacy</p></a>
+          <a href="#"><p>About us</p></a>
+          <a href="#"><p>Terms</p></a>
+          <a href="#"><p>Products</p></a>
+          <a href="#"><p>Return Policy</p></a>
+          <a href="#"><p>Careers</p></a>
+          <a href="#"><p>Shipping Policy</p></a>
+          <a href="#"><p>FAQ</p></a>
         </div>
-
-        <h2>Payment Information</h2>
-
-        <div id="paymentFormField">
-          <label for="cardNumber"></label>
-          <input type="text" name="cardNumber" placeholder="Credit/Debit Card Number">
-        </div>
-
-        <div id="paymentFormField">
-          <label for="expirationDate"></label>
-          <input type="text" name="expirationDate" placeholder="Expiration MM/YY">
-
-          <label for="cvv"></label>
-          <input type="text" name="cvv" placeholder="CVV">
-
-        </div>
-
-        <div id="paymentFormField">
-          <input class="navSubmit" type="submit" name="paymentSubmit" value="Submit">
-          <input class="navReset" type="reset" name="paymentReset" value="Reset">
-        </div>
-      </form>
     </section>
 
+    </section>
 
-</body>
+  </footer>
