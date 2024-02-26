@@ -162,15 +162,31 @@ nav a:hover, nav a:focus {
 
 .products{
   margin-top: 5rem;
-  padding-left: 20vw;
-  padding-right: 20vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+    column-gap: 3rem;
+    grid-row-gap: 3rem;
+}
+
+.productBorder{
+    cursor: pointer;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: rgba(99, 99, 99, 0.4) 0px 2px 8px 0px; 
+}
+
+.productBorder:hover, .productBorder:focus{
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: rgba(248, 181, 213, 1) 0px 2px 8px 0px; 
 }
 
 .product img{
   padding: 5rem;
+    
 }
 
 .imgDetail{
@@ -187,7 +203,7 @@ nav a:hover, nav a:focus {
   color: #353535;
   font-size: 100px;
 }
-
+ 
 code {
   background-color: #EEE;
   margin-top: 1rem;
@@ -196,6 +212,7 @@ code {
   display: block;
 }
 .imgLink{
+    border-radius: 10px;
 }
 .imgLink:hover{
   opacity: 70%;
@@ -308,7 +325,7 @@ code {
   border: 2px #CC6C9A solid;
   background:#FAFAFA;
   border-radius: 0.5rem;
-  width: 15vw;
+  width: 15rem;
   padding: 8px;
   margin: 8px 0;
 }
@@ -316,6 +333,7 @@ code {
 
 
 .defaultButton:hover, .defaultButton:focus {
+    cursor: pointer;
   background-color: #CC6C9A;
   border: 3px solid;
   border-color: #CC6C9A;
@@ -624,8 +642,8 @@ input[type=text]:focus, .paymentFormInput:focus {
 
 .imgDetail2:hover, .imgDetail2:focus{
     cursor: pointer; 
-    border: solid 2px #CC6C9A;
-    filter: drop-shadow(-4px 2px 12px #000000);
+    border: solid 3px #CC6C9A;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 2px 8px 0px;
 
 }
 
