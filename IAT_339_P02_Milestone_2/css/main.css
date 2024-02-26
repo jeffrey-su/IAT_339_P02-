@@ -465,6 +465,71 @@ input[type=text]:focus, .paymentFormInput:focus {
 .returnLink{
     text-align: center;
 }
+
+.logotype{
+    font-family: 'PP Right Didone - Spatial Fine', 'Garamond', serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #353535;
+
+}
+/* Checkout Cart ------------------------------------------------------------------------------------------ */
+.column{
+    padding-top:2rem;
+}
+
+.sectionGap{
+    border-top: solid 2px #E3E3E3;
+    padding: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.wrapper2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:left;
+    text-align: left;
+    padding-left: 2.5rem;
+
+}
+
+.box2{
+    padding-left: 12.5rem;
+
+}
+
+.boxA{
+}
+
+.boxB{
+    padding-left: 3vw;
+    align-items: baseline;
+}
+
+.removeLink{
+    color: #CC6C9A;
+    text-decoration: underline;
+    margin-top: 10vw;
+}
+
+.removeLink:hover, .removeLink:focus{
+    color:#CC6C9A;
+    text-decoration: none;
+}
+
+.checkoutImg{
+    border:none;
+    border-radius: 20px;
+    flex-shrink: 0
+}
+
+.checkoutInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
 /* Landing Page  --------------------------------------------------------------------------------*/
 
 .landingHero{
