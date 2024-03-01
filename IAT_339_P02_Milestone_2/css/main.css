@@ -260,16 +260,16 @@ nav a:hover, nav a:focus {
 
 .hero2Content{
   display: block;
-  line-height: 1vw;
+  line-height: 2vw;
   position: absolute;
   bottom: 10vw;
   right: 4vw;
-  max-width: 25vw;
+  max-width: 50vw;
 }
 
 .hero3Content{
   display: block;
-  line-height: 1vw;
+  line-height: 2vw;
   position: absolute;
   bottom: 10vw;
   left: 4vw;
@@ -278,10 +278,10 @@ nav a:hover, nav a:focus {
 
 .hero4Content{
   display: block;
-  line-height: 1vw;
+  line-height: 2vw;
   position: absolute;
   bottom: 10vw;
-  right: 4vw;
+  left: 4vw;
   max-width: 25vw;
 }
 
@@ -305,13 +305,15 @@ footer p{
 }
 
 footer img{
+  padding-top: 2vw;
+  padding-bottom: 2vw;
   width: 3vw;
   width: 3vw;
 }
 
 .footer{
   padding-left: 5vw;
-  padding-top: 1vw;
+  padding-top: 4vw;
 }
 
 .footerContent{
@@ -324,6 +326,10 @@ footer img{
   align-self: flex-start;
 }
 
+.footerLogo h1{
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 
 /*
@@ -596,9 +602,8 @@ justify-content: space-around;
   color: #353535;
 }
 /* media queries --------------------------------------------------------------------------------*/
- @media (width < 1110px){
+ @media (width < 1210px){
     .hero2Content, .hero3Content, .hero4Content {
-     line-height: 1;
      max-width: 60vw;
    }
    .hero1Content h2, .hero2Content h2, .hero3Content h2, .hero4Content h2 {
@@ -611,12 +616,21 @@ justify-content: space-around;
      font-size: 3vw;
    }
 
+    .hero2Content, .hero3Content, .hero4Content{
+     display: block;
+     line-height: 3vw;
+     position: absolute;
+     bottom: 10vw;
+     left: 4vw;
+     max-width: 80vw;
+   }
+
    footer p, .wrapper2 p, .checkoutInfo p, .wrapper p{
-     font-size: 5vw;
+     font-size: 2vw;
    }
    footer img{
-     width: 10vw;
-     width: 10vw;
+     width: 5vw;
+     width: 5vw;
    }
 
    .footerContent{
@@ -641,8 +655,14 @@ justify-content: space-around;
    }
  }
 
+ @media (width > 1210px){
+    .hero2Content , .hero3Content , .hero4Content  {
 
-
+     background-color: rgba(0,0,0,0.4);
+     padding-left: 2vw;
+     padding-right: 2vw;
+   }
+ }
 /* typefaces --------------------------------------------------------------------------------*/
 @font-face {
     font-family: 'PP Right Didone - Spatial Fine';
