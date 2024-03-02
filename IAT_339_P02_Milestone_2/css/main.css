@@ -84,7 +84,6 @@ li {
   margin-top: 0;
   max-width: 60rem;
   color: #353535;
-
 }
 
 .p-product{
@@ -173,19 +172,20 @@ nav a:hover, nav a:focus {
   width: 10vw;
   padding: 8px;
   margin: 8px 0;
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .defaultButton:hover, .defaultButton:focus {
   background-color: #CC6C9A;
-  border: 3px solid;
-  border-color: #CC6C9A;
+  border: 2px solid;
+  border-color: transparent;
+  border-radius: 0.5rem;
 
   color: #ffffff;
   width: 10vw;
   padding: 8px;
   margin: 8px 0;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .navSubmit{
@@ -543,7 +543,7 @@ justify-content: space-around;
 */
 .productListingHero{
   padding-top: 3vw;
-  width: 100vw;
+  width: 100%;
 }
 .productNavLink{
   color: #353535;
@@ -640,13 +640,13 @@ justify-content: space-around;
    .defaultButton, .navSubmit, .navReset{
      font-size: 2vw;
      font-weight: bold;
-     width: 10rem;
+     width: 20vw;
    }
 
    .defaultButton:hover, .defaultButton:focus, .navSubmit:hover, .navSubmit:focus, .navReset:hover, .navReset:focus{
      font-size: 2vw;
      font-weight: bold;
-     width: 10rem;
+     width: 20vw;
    }
 
    .aboutCopy{
@@ -654,15 +654,66 @@ justify-content: space-around;
        font-size: 2vw;
    }
  }
+ @media (width > 1210px) {
+   .hero2Content, .hero3Content, .hero4Content  {
+    background-color: rgba(0,0,0,0.4);
+    padding: 1vw;
+    padding-right: 5vw;
+    border-radius: 1vw;
+  }
+ }
+ @media (width < 923px){
 
- @media (width > 1210px){
-    .hero2Content , .hero3Content , .hero4Content  {
+   .products{
+     margin-top: 5rem;
+     padding-left: 10vw;
+     padding-right: 10vw;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+   }
 
-     background-color: rgba(0,0,0,0.4);
-     padding-left: 2vw;
-     padding-right: 2vw;
+ }
+ @media (width < 905px){
+
+   .checkoutCart{
+     margin-top: 2rem;
+     padding-left: 2rem;
+     padding-right: 2rem;
+     padding-bottom: 2rem;
+     width: 100vw;
+     border: 1px solid #727272;
+     border-color: #727272;
+   }
+
+   .checkoutCart p{
+     font-size: 4vw;
    }
  }
+
+ @media (width < 565px){
+
+   #paymentFormInput{
+     width: 80vw;
+     padding: 10px;
+     margin: 8px 0;
+   }
+
+   .checkoutCart{
+     margin-top: 2rem;
+     padding-left: 2rem;
+     padding-right: 2rem;
+     padding-bottom: 2rem;
+     width: 100vw;
+     border: 1px solid #727272;
+     border-color: #727272;
+   }
+
+   .checkoutCart p{
+     font-size: 4vw;
+   }
+ }
+
 /* typefaces --------------------------------------------------------------------------------*/
 @font-face {
     font-family: 'PP Right Didone - Spatial Fine';
