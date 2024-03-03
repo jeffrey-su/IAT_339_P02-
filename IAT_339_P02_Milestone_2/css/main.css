@@ -16,12 +16,12 @@ body {
 }
 
 .infoLink{
-    color: #CC6C9A;
+    color: #E8C6D6;
     text-decoration: underline;
 }
 
 .infoLink:hover, .infoLink:focus{
-    color:#CC6C9A;
+    color:#E8C6D6;
     text-decoration: none;
 }
 
@@ -86,6 +86,14 @@ li {
   color: #353535;
 }
 
+input{
+  border-color: #E8C6D6;
+}
+
+*:focus{
+  outline: none;
+}
+
 .p-product{
   font-family: "Noto Sans HK", 'Courier New', sans-serif;
   font-weight: 200;
@@ -96,7 +104,7 @@ li {
 a{
   font-family: "Noto Sans HK", 'Courier New', sans-serif;
   font-weight: 200;
-  color: #CC6C9A;
+  color: #E8C6D6;
   font-weight: bold;
   text-decoration: none;
 }
@@ -191,8 +199,8 @@ nav a:hover, nav a:focus {
   font-family: "Noto Sans HK", 'Courier New', sans-serif;
   font-weight: 200;
   font-size: 1vw;
-  color: #CC6C9A;
-  border: 2px #CC6C9A solid;
+  color: #E8C6D6;
+  border: 2px #E8C6D6 solid;
   background:#FAFAFA;
   border-radius: 0.5rem;
   width: 10vw;
@@ -202,7 +210,7 @@ nav a:hover, nav a:focus {
 }
 
 .defaultButton:hover, .defaultButton:focus {
-  background-color: #CC6C9A;
+  background-color: #E8C6D6;
   border: 2px solid;
   border-color: transparent;
   border-radius: 0.5rem;
@@ -219,8 +227,8 @@ nav a:hover, nav a:focus {
   font-weight: 200;
   font-size: 1vw;
   color: #FAFAFA;
-  border: 2px #CC6C9A solid;
-  background:#CC6C9A;
+  border: 2px #E8C6D6 solid;
+  background:#E8C6D6;
   border-radius: 0.5rem;
   width: 10vw;
   padding: 8px;
@@ -228,11 +236,11 @@ nav a:hover, nav a:focus {
 }
 
 .navSubmit:focus, .navSubmit:hover {
-  background-color: #CC6C9A;
-  border: 3px solid;
-  border-color: #CC6C9A;
+  background-color: #FAFAFA;
+  border: 2px solid;
+  border-color: #E8C6D6;
 
-  color: #ffffff;
+  color: #E8C6D6;
   width: 10vw;
   padding: 8px;
   margin: 8px 0;
@@ -243,8 +251,8 @@ nav a:hover, nav a:focus {
   font-family: "Noto Sans HK", 'Courier New', sans-serif;
   font-weight: 200;
   font-size: 1vw;
-  color: #CC6C9A;
-  border: 2px #CC6C9A solid;
+  color: #E8C6D6;
+  border: 2px #E8C6D6 solid;
   background:#FAFAFA;
   border-radius: 0.5rem;
   width: 10vw;
@@ -253,9 +261,9 @@ nav a:hover, nav a:focus {
 }
 
 .navReset:focus, .navReset:hover {
-  background-color: #CC6C9A;
-  border: 3px solid;
-  border-color: #CC6C9A;
+  background-color: #E8C6D6;
+  border: 2px solid;
+  border-color: #E8C6D6;
 
   color: #ffffff;
   width: 10vw;
@@ -381,21 +389,20 @@ input[type=text], input[type=email], input[type=tel]{
   width: 15rem;
   padding: 10px;
   margin: 8px 0;
+  border: 2px solid #E8C6D6;
 }
 
-input[type=text]:focus, .paymentFormInput:focus {
-  color: #CC6C9A;
-  border: 3px solid #CC6C9A;
+input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[type=email]:hover .paymentFormInput:focus {
+  color: #E8C6D6;
+  border: 2px solid #E3E3E3;
   transition-duration: 0.5s;
 }
+
 
 .paymentFormSubmit:focus{
   background-color: #FAFAFA;
-  color: #CC6C9A;
+  color: #E8C6D6;
   transition-duration: 0.5s;
-}
-.paymentForm{
-
 }
 
 .checkoutBox{
@@ -431,7 +438,7 @@ input[type=text]:focus, .paymentFormInput:focus {
 }
 
 .profileName{
-  color: #CC6C9A;
+  color: #E8C6D6;
 
 }
 
@@ -493,7 +500,7 @@ input[type=text]:focus, .paymentFormInput:focus {
 }
 
 .imgDetail2:hover, .imgDetail2:focus{
-    border: solid 2px #CC6C9A;
+    border: solid 2px #E8C6D6;
     filter: drop-shadow(-4px 2px 12px #000000);
 
 }
@@ -532,13 +539,13 @@ input[type=text]:focus, .paymentFormInput:focus {
 }
 
 .removeLink{
-    color: #CC6C9A;
+    color: #E8C6D6;
     text-decoration: underline;
     margin-top: 10vw;
 }
 
 .removeLink:hover, .removeLink:focus{
-    color:#CC6C9A;
+    color:#E8C6D6;
     text-decoration: none;
 }
 
@@ -598,7 +605,7 @@ input[type=text]:focus, .paymentFormInput:focus {
 }
 
 .productBorder:hover, .productBorder:focus{
-    box-shadow: 0 4px 8px 0 rgba(255, 126, 188, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(232, 198, 214, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 
@@ -654,8 +661,79 @@ input[type=text]:focus, .paymentFormInput:focus {
 .contactNavLink{
   color: #353535;
 }
+
+.contactHeader{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contactContent{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 22vw;
+  margin-right: 22vw;
+}
+
+.contactContent h1{
+  justify-content: center;
+}
+
+.contactName{
+  display: block;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: 22vw;
+  margin-right: 22vw;
+}
+
+#firstName {
+  margin-right: 1vw;
+  width: 48%;
+}
+
+#lastName{
+  width: 49%;
+}
+
+.contactEmail{
+  display: block;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: 22vw;
+  margin-right: 22vw;
+}
+.contactText{
+  display: block;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: 22vw;
+  margin-right: 22vw;
+}
+
+#contactEmailInput{
+  width: 98.5%;
+  border: 2px solid #E8C6D6;
+}
+
+#contactTextBox{
+  width: 100%;
+  height: 10vw;
+  border: 2px #E8C6D6 solid;
+  font-size: 1rem;
+}
+
+#contactTextBox:focus, .contactTextBox:hover{
+  border: 2px #E3E3E3  solid;
+}
+
+#contactEmailInput:focus, .contactEmailInput:hover{
+  border: 2px #E3E3E3  solid;
+}
+
 /* media queries --------------------------------------------------------------------------------*/
- @media (width < 1210px){
+ @media (width <= 1210px){
     .hero2Content, .hero3Content, .hero4Content {
      max-width: 60vw;
    }
@@ -708,7 +786,7 @@ input[type=text]:focus, .paymentFormInput:focus {
        text-align: center;
    }
  }
- @media (width > 1210px) {
+ @media (width >= 1210px) {
    .hero2Content, .hero3Content, .hero4Content  {
     background-color: rgba(0,0,0,0.4);
     padding: 1vw;
@@ -716,7 +794,16 @@ input[type=text]:focus, .paymentFormInput:focus {
     border-radius: 1vw;
   }
  }
- @media (width < 923px){
+
+ @media (width <= 1102px) {
+   .contactName input{
+     padding-left: 1vw;
+     margin-right: 1vw;
+     width: 100%;
+   }
+ }
+
+ @media (width <= 923px){
 
    .products{
      margin-top: 5rem;
