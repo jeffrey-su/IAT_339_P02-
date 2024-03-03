@@ -139,7 +139,7 @@ nav a:hover, nav a:focus {
 .imgDetail{
     border:none;
     border-radius: 25px;
-    flex-shrink: 0
+    flex-shrink: 0;
 }
 
 .headerLink{
@@ -153,6 +153,32 @@ nav a:hover, nav a:focus {
 
 .imgLink:hover{
   opacity: 70%;
+}
+
+/*
+  Confirm
+*/
+
+.centerContent{
+    text-align: center;
+}
+
+.confirmContent{
+    display: block;
+    line-height: 1rem;
+    position: absolute;
+    bottom:17vw;
+    left:15vw;
+
+}
+
+.confirmPurchase{
+    display: block;
+    line-height: 1rem;
+    position: absolute;
+    bottom:17vw;
+    left:25vw;
+
 }
 
 /*
@@ -285,12 +311,12 @@ nav a:hover, nav a:focus {
   max-width: 25vw;
 }
 
-.hero1Content h2, .hero2Content h2, .hero3Content h2, .hero4Content h2 {
+.hero1Content h2, .hero2Content h2, .hero3Content h2, .hero4Content h2, .confirmContent h2, .confirmPurchase h2 {
   color: #FAFAFA;
   font-size: 3vw;
 }
 
-.hero1Content p, .hero2Content p, .hero3Content p, .hero4Content p {
+.hero1Content p, .hero2Content p, .hero3Content p, .hero4Content p{
   color: #FAFAFA;
   font-size: 1vw;
 }
@@ -432,22 +458,33 @@ input[type=text]:focus, .paymentFormInput:focus {
 }
 
 .wrapper {
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 
 }
 
-@media screen and (max-width: 80rem) {
+.addPadding{
+    padding-left: 3vw;
+    
+}
+
+.seeMoreDiv{
+    text-align: center;
+}
+
+.boldText{
+    font-weight: bold; 
+}
+
+@media screen and (max-width: 50rem) {
     .wrapper {
         display: block;
     }
 }
 
-.box {
-    margin: 1rem;
-}
 
 .imgDetail2{
     border:none;
@@ -459,16 +496,6 @@ justify-content: space-around;
     border: solid 2px #CC6C9A;
     filter: drop-shadow(-4px 2px 12px #000000);
 
-}
-
-.returnLink{
-    cursor:pointer;
-    text-align: center;
-}
-
-.returnLink:hover, .returnLink:focus {
-    color: #FF7EBC;
-    transition:0.5s;
 }
 
 .logotype{
@@ -494,7 +521,8 @@ justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    text-align: center;
+    text-align: left;
+    
 }
 
 
@@ -543,7 +571,7 @@ justify-content: space-around;
 */
 .productListingHero{
   padding-top: 3vw;
-  width: 100%;
+  width: 100%;x
 }
 .productNavLink{
   color: #353535;
@@ -590,6 +618,18 @@ justify-content: space-around;
 .aboutCopy{
   max-width: 50vw;
   font-size: 1vw;
+    padding-left:30vw;
+    padding-right:30vw;
+}
+
+.aboutContent{
+    text-align: center;
+}
+
+.centerButton{
+  padding-bottom: 3vw;
+  display: flex;
+  justify-content: center;
 }
 
 .aboutNavLink{
@@ -597,6 +637,19 @@ justify-content: space-around;
 }
 
 /* Contact Page --------------------------------------------------------------------------------- */
+
+.contactContent{
+  display: flex;
+  justify-content: center;
+    
+}
+
+.centerContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
 
 .contactNavLink{
   color: #353535;
@@ -611,7 +664,7 @@ justify-content: space-around;
      font-size: 5vw;
    }
 
-   .hero1Content p, .hero2Content p, .hero3Content p, .hero4Content p{
+   .hero1Content p, .hero2Content p, .hero3Content p, .hero4Content p, .confirmContent p{
      color: #FAFAFA;
      font-size: 3vw;
    }
@@ -652,6 +705,7 @@ justify-content: space-around;
    .aboutCopy{
        max-width: 50vw;
        font-size: 2vw;
+       text-align: center;
    }
  }
  @media (width > 1210px) {
