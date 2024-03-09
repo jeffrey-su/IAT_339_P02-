@@ -505,7 +505,7 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
 
 .imgDetail2:hover, .imgDetail2:focus{
     border: solid 2px #E8C6D6;
-    filter: drop-shadow(-4px 2px 12px #000000);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 
@@ -623,6 +623,39 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
 .productBorder h3{
   padding-left: 1rem;
 }
+
+/*
+  Product Details Page  --------------------------------------------------------------------------------
+*/
+
+.reviewBox{
+    border: solid 3px #353535; 
+    width: 22rem;
+    height: 23rem; 
+    flex-shrink: 0;
+    justify-content: center;
+    margin-bottom: 5vh;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.starImage{
+    width: 19rem; 
+    height: 3.5rem;
+    padding-top: 1rem;
+}
+
+.reviewBox h2{
+    font-size: 23px;
+}
+
+.reviewBox p{
+    font-size: 15px;
+    color: #7C7C7C;
+    
+}
+
+
 
 /* About Page--------------------------------------------------------------------------------------- */
 
