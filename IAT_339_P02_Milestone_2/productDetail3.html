@@ -13,6 +13,7 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/normalize.css" rel="normalize">
     <link href="index.html" rel="stylesheet" >
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
 
     <title>P01 - Product Details</title>
 
@@ -37,13 +38,31 @@
 
           <div>
               <h1>Coconut Mooncake</h1>
+              <div>
+                  <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </div>
               <h2 class="boldText">$12.99 / half dozen |  $24.99 / dozen</h2>
               <p>Indulge in our exquisite Thai Young Coconut Snow Skin Mooncakes. Each snow skin mooncake is handcrafted with passion. Its skin soft and chewy, expertly crafted with the finest mochi. Tastes like your favourite coconut smoothie, but better, much better. Each box of snow skin mooncakes comes with a chiller bag.</p>
               <p><strong>Orders must be picked up within 30 minutes of selected pick up time.</strong></p>
-              <select class = "btn" name="pay" id="payment-options">
-                  <option value="half dozen">Half Dozen</option>
-                  <option value="dozen">Dozen</option>
-              </select>
+              <div class="productWrapper">
+                  <select class = "dropDownButton" name="pay" id="payment-options">
+                      <option value="half dozen">Half Dozen</option>
+                      <option value="dozen">Dozen</option>
+                  </select>
+                  
+                  <form>
+                      <label class="titleMargin" for="quantity">Quantity:</label>
+                      <input class="quantityButton" type="number" id="quantity" name="quantity" min="1" max="10">
+                  </form>
+                  
+              
+              </div>
+              
+
               <br>
               <h2>Subtotal | $12.99</h2>
               <input class="defaultButton" type="button" name="addCart" value="ADD TO CART">
@@ -65,15 +84,67 @@
               </div>
           </div>
       </section>
+      
+      <section id="review" class="sectionGap">
+          <h1 class="addPadding">Reviews</h1>
+
+              <div>
+                  <h2 class="reviewHeader">Leave a Review:</h2>
+                  <div>
+                      <img src="img/Star2.png" class="starImage2" alt="star rating">
+                  </div>
+                  
+                  <textarea name="contactTextBox" id="reviewTextBox" placeholder="Your Message"></textarea>
+                  <div class="reviewButtonBox">
+                      <input class="navSubmit" href="" type="submit" name="contactSubmit" value="Leave Review">
+                  </div>
+              </div>
+
+              
+          
+          
+          
+          <h2 class="reviewHeader">View Other Reviews</h2>
+          <div class="wrapper"> 
+              <div class="reviewBox">
+                  <img src="img/Star.png" class="starImage" alt="star rating">
+                  <h2 class="boldText">Tasty and healthy alternative</h2>
+                  <p>Feb 17, 2024</p>
+                  <br>
+                  <p class="boldText">Lorem ipsum dolor sit amet, consectetur ipsum adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad et minim veniam.</p>
+              </div>
+              
+              <div class="reviewBox">
+                  <img src="img/Star2.png" class="starImage" alt="star rating">
+                  <h2 class="boldText">Tasty but too small!</h2>
+                  <p>Feb 23, 2024</p>
+                  <br>
+                  <p class="boldText">Lorem ipsum dolor sit amet, consectetur ipsum adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad et minim veniam.</p>  
+                                   
+              </div>
+
+              <div class="reviewBox">
+                  <img src="img/Star2.png" class="starImage" alt="star rating">
+                  <h2 class="boldText">Tasty and healthy alternative</h2>
+                  <p>Mar 1, 2024</p>
+                  <br>
+                  <p class="boldText">Lorem ipsum dolor sit amet, consectetur ipsum adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad et minim veniam.</p>
+              </div>
+              
+          </div>
+          
+      </section>
+          
+          
 
       <section class="sectionGap">
           <h1 class="addPadding">ALSO SEE</h1>
           <div class="wrapper">
           <div class="seeMoreDiv">
-              <a href="productDetail.html">
-              <img src="img/Durian-Snowskin_1-500x500.jpg" class="imgDetail2" width="400" height="400" alt="Coconut Snow Skin Mooncake">
+              <a href="productDetail4.html">
+              <img src="img/hojichaProduct500x500.jpg" class="imgDetail2" width="400" height="400" alt="Coconut Snow Skin Mooncake">
               </a>
-              <h2 class="boldText">DURIAN SNOW SKIN MOONCAKE</h2>
+              <h2 class="boldText">HOJICHA SNOW SKIN MOONCAKE</h2>
               </div>
               
           <div class="seeMoreDiv">
@@ -85,7 +156,7 @@
               </div>
               
           <div class="seeMoreDiv">
-              <a href="productDetail.html">
+              <a href="productDetail5.html">
                   <img src="img/lotusProduct500x500.png" class="imgDetail2" width="400" height="400" alt="">
               </a>
               <h2 class="boldText">SALTED EGG YOLK SNOW SKIN MOONCAKE</h2>

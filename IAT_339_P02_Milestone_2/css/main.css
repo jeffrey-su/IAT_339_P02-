@@ -628,8 +628,43 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
   Product Details Page  --------------------------------------------------------------------------------
 */
 
+.quantityButton{
+      font-family: "Noto Sans HK", 'Courier New', sans-serif;
+  font-weight: 200;
+  font-size: 1vw;
+  color: #E8C6D6;
+  border: 2px #E8C6D6 solid;
+  background:#FAFAFA;
+  border-radius: 0.5rem;
+  width: 5vw;
+  padding: 8px;
+  margin:8px 0;
+    cursor: pointer;
+      
+}
+
+.dropDownButton{
+      font-family: "Noto Sans HK", 'Courier New', sans-serif;
+  font-weight: 200;
+  font-size: 1vw;
+  color: #E8C6D6;
+  border: 2px #E8C6D6 solid;
+  background:#FAFAFA;
+  border-radius: 0.5rem;
+  width: 20vw;
+  padding: 8px;
+  margin:8px 0;
+    cursor: pointer;
+      
+}
+
+.titleMargin{
+    margin-left:8px;
+    
+}
+
 .reviewBox{
-    border: solid 3px #353535; 
+    border: solid 2px #353535; 
     width: 22rem;
     height: 23rem; 
     flex-shrink: 0;
@@ -639,10 +674,63 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
     padding-right: 25px;
 }
 
+.productWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+
+.reviewHeader{
+    font-weight: bold;
+    font-size: 23px;
+    margin-left: 5vh;
+    
+}
+
+.reviewButtonBox{
+  display: flex;
+  flex-direction: column;
+    margin-top: -2vw;
+  margin-left: 2.5vw;
+  margin-right: 5vw;
+  margin-bottom: 2vw;
+  align-items: flex-start;
+}
+
+#reviewTextBox{
+    width: 50%;
+    height: 10vw;
+    border: 2px #353535 solid;
+    font-size: 1rem;
+    padding: 1rem;
+    font-family: "Noto Sans HK", 'Courier New', sans-serif;
+    font-size: 1 rem;
+    margin-left: 5vh;
+    margin-bottom: 5vh;
+}
+
+
 .starImage{
-    width: 19rem; 
-    height: 3.5rem;
+    width: 15rem; 
+    height: 2.6rem;
     padding-top: 1rem;
+}
+
+.starImage2{
+    width: 15rem; 
+    height: 2.6rem;
+    margin-top: -1vw;
+    padding-top: 1rem;
+    margin-left: 5vh;
+    margin-bottom: 2vh;
+}
+
+.checked {
+  color: #E8C6D6;
 }
 
 .reviewBox h2{
