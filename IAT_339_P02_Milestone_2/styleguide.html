@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+    <title>P01 - Style Guide Template</title>
+
+    <link href="css/styleGuide.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="normalize">
+
+
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Luna Style Guide</h1>
+
+      <p>A template you can use to start building out your own style guides with.</p>
+
+
+      <nav class = "nav">
+        <a href="#interactive_elements">INTERACTIVE ELEMENTS</a>
+        <a href="#text_elements">TEXT ELEMENTS</a>
+        <a href="#combined_elements">COMBINED ELEMENTS</a>
+        <a href="productListing.html">PRODUCT LISTING TEMPLATE</a>
+        <a href="checkout.html">CHECKOUT TEMPLATE</a>
+        <a href="#citations">CITATIONS</a>
+      </nav>
+    </header>
+
+    <h2>INTERACTIVE ELEMENTS</h2>
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+
+
+
+      <section class="intElement1">
+        <h3>In-text link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.infoLink</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;p&gt;Click &lt;a href="https://www.sfu.ca/~jgs7/01-HTML-Intro-Starter_Files/"class="link"&gt;this link&lt;/a&gt;for more info&lt;/p&gt; </code>
+        <p>Click <a href="https://www.sfu.ca/~jgs7/01-HTML-Intro-Starter_Files/" class="infoLink">this link</a> for more info </p>
+      </section>
+
+
+      <!-- Default Button styling section -->
+      <section class="intElement2">
+
+        <h3>Navigation Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.defaultButton</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;input class="defaultButton "type="button" name="defaultButton" value="Default Button"&gt;</code>
+        <input class="defaultButton" type="button" name="defaultButton" value="Default Button">
+
+      </section>
+
+
+      <section class="intElement3">
+        <h3>Submit/Reset Buttons</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.navSubmit</p>
+          <p>.navReset</p>
+
+          <h4>Sample code:</h4>
+          <code> &lt;button type="navSubmit" class="Submit" value="Submit"&gt;Submit&lt;/button&gt;<br>
+          &lt;button type="navReset"  class="Reset" value="Reset"&gt;Reset&lt;/button&gt;</code>
+          <button type="Submit" class="navSubmit" value="Submit">Submit</button>
+          <button type="Reset" class="navReset" value="Reset">Reset</button>
+      </section>
+
+
+      <section class="intElement4">
+        <h3>Text Input Field with Label</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.navInput</p>
+
+
+        <h4>Sample code:</h4>
+
+        <code>&lt;label for="textInput"&gt;Text Input&lt;/label&gt;<br>
+
+        &lt;input type="text" id="navInput" name="input"&gt;</code>
+
+        <label for="textInput">Text Input</label>
+        <input type="text" id="textInput" name="input">
+      </section>
+
+
+      <section class="intElement5">
+        <h3>Radio Button with Label</h3>
+
+        <h4>CSS selector:</h4>
+        <p>#radioInput</p>
+
+
+        <h4>Sample code:</h4>
+
+        <code>&lt;label for="radioInput"&gt;Radio Input&lt;/label&gt;<br>
+        &lt;input type="radio" id="radioInput" name="radioInput"&gt;</code>
+
+        <label for="radioInput">Radio Input</label>
+        <input type="radio" id="radioInput" name="radioInput">
+      </section>
+
+
+      <section class="intElement6">
+        <h3>Image as a Link</h3>
+
+        <h4>CSS selector:</h4>
+
+        <p>.imgLink</p>
+
+        <h4>Sample code:</h4>
+
+        <code>&lt;a href="https://en.wikipedia.org/wiki/Snow_skin_mooncake"&gt;&lt;img src="img/matchaProduct3199x3199.png.png" class="imgLink" width="250" height="250" alt="Matcha-flavoured snow skin mooncake"&gt;&lt;/a&gt;</code>
+
+
+        <a href="https://en.wikipedia.org/wiki/Snow_skin_mooncake"><img src="img/matchaProduct3199x3199.png" class="imgLink" width="250" height="250" alt="Matcha-flavoured snow skin mooncake"></a>
+      </section>
+
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <h2>Text Elements</h2>
+    <section id="text_elements">
+
+
+      <section class="textElement1">
+        <h3>Headings</h3>
+
+        <h4>CSS selector:</h4>
+        <p>h1</p>
+        <p>h2</p>
+        <p>h3</p>
+        <p>h4</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;h1&gt; headings &lt;/h1&gt;&lt;h2&gt; headings &lt;/h2&gt;&lt;h3&gt; headings &lt;/h3&gt;&lt;h4&gt; headings &lt;/h4&gt;</code>
+        <h1> HEADING 01 </h1>
+          <h2> HEADING 02 </h2>
+            <h3> HEADING 03 </h3>
+              <h4> HEADING 04 </h4>
+      </section>
+
+      <section class="textElement2">
+        <h3>Paragraphs</h3>
+
+        <h4>CSS selector:</h4>
+        <p>p</p>
+
+
+        <h4>Sample code:</h4>
+        <code>&lt;p&gt;The body copy should look like this. Text size should be less than 25px, and font weight should be extra light.
+            body copy are used for descriptions. Product details, extra information, and expanded story should use this style of body copy.&lt;/p&gt;
+
+            &lt;p&gt;Body copy should be kept clean and simple focusing on accessibility using breaks when needed to split large paragraphs and separate sections.&lt;/p&gt;
+        </code>
+        <p>The body copy should look like this. Text size should be less than 25px, and font weight should be extra light.
+            body copy are used for descriptions. Product details, extra information, and expanded story should use this style of body copy.</p>
+
+        <p>Body copy should be kept clean and simple focusing on accessibility using breaks when needed to split large paragraphs and separate sections.</p>
+      </section>
+
+      <section class="textElement3">
+        <h3>Numbered Lists</h3>
+
+        <h4>CSS selector:</h4>
+        <p>ol</p>
+
+
+        <h4>Sample code:</h4>
+        <code>&lt;ol&gt;
+          &lt;li&gt; One &lt;/li&gt;
+          &lt;li&gt; Two &lt;/li&gt;
+          &lt;li&gt; Three &lt;/li&gt;
+          &lt;li&gt; Four &lt;/li&gt;
+        &lt;/ol&gt;</code>
+        <ol>
+          <li> One </li>
+          <li> Two </li>
+          <li> Three </li>
+          <li> Four </li>
+        </ol>
+      </section>
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <section class="element">
+        <h3>Main Navigation</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.nav</p>
+
+
+        <h4>Sample code:</h4>
+        <code>&lt;nav class="nav"&gt;
+          &lt;a href="index.html" class="navHome"&gt; HOME &lt;/a&gt;<br>
+          &lt;a href="index.html" class="navProducts"&gt; PRODUCTS &lt;/a&gt;<br>
+          &lt;a href="index.html" class="navAbout"&gt; ABOUT &lt;/a&gt;<br>
+          &lt;a href="index.html" class="navContact"&gt; CONTACT &lt;/a&gt;<br>
+        &lt;/nav&gt;</code>
+        <nav class="nav">
+
+            <a href="index.html" class="navHome"> HOME </a>
+            <a href="index.html" class="navProducts"> PRODUCTS </a>
+            <a href="index.html" class="navAbout"> ABOUT </a>
+            <a href="index.html" class="navContact"> CONTACT </a>
+
+        </nav>
+      </section>
+
+      <section class="element">
+        <h3>Product Listing</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.productListing</p>
+
+
+        <h4>Sample code:</h4>
+
+        <code>&lt;div class="productListing"&gt; <br>
+        &lt;h1&gt;Dark Chocolate Truffle&lt;/h1&gt;<br>
+        &lt;a href="https://cwandt.com/products/pen-type-b?variant=30696392260"&gt;&lt;img src="img/redBeanProduct3199x3199.png" width="500" height="500" alt="A metal fountain pen on a white background"&gt;&lt;/a&gt;<br>
+          &lt;p class="p-product"&gt;<br>
+
+              Treat yourself to our Chocolate Mooncake with chocolate truffle filling.<br>
+              Indulge in heavenly flavors that elevate every moment with your loved ones.<br>
+
+            &lt;/p&gt;<br>
+          &lt;p&gt;&lt;a href="description.HTML" class="link"&gt;Product details&lt;/a&gt;&lt;/p&gt;<br>
+            &lt;h2&gt;$30.00 for two&lt;/h2&gt;<br>
+          &lt;input class="defaultButton" type="button" name="addCart" value="Add to Cart"&gt;&lt;/input&gt;<br>
+        &lt;/div&gt;<br>
+      </code>
+
+        <div class="productListing">
+        <h1>Dark Chocolate Truffle</h1>
+
+
+        <a href="https://cwandt.com/products/pen-type-b?variant=30696392260"><img src="img/redBeanProduct3199x3199.png" width="500" height="500" alt="A metal fountain pen on a white background"></a>
+          <p class="p-product">
+
+              Treat yourself to our Chocolate Mooncake with chocolate truffle filling.
+              Indulge in heavenly flavors that elevate every moment with your loved ones.
+
+            </p>
+          <p><a href="description.HTML" class="link">Product details</a></p>
+            <h2>$30.00 for two</h2>
+          <input class="defaultButton" type="button" name="addCart" value="Add to Cart">
+        </div>
+      </section>
+
+      <h3>Payment Form</h3>
+      <section class="paymentFormBox">
+
+        <div class="paymentFormCode">
+          <h4>CSS selector:</h4>
+          <p>.paymentForm</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;form class="paymentForm" action="index.html" method="post"&gt;<br>
+
+            &lt;h2&gt;Shipping address&lt;/h2&gt;<br>
+
+            &lt;div class="paymentFormField"&gt;<br>
+              &lt;label for="paymentFirstName"&gt;&lt;/label&gt;<br>
+              &lt;input class="paymentFormInput" type="text" name="paymentFirstName" placeholder="First name" &gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;div class="paymentFormField"&gt;<br>
+              &lt;label for="paymentLastName"&gt;&lt;/label&gt;<br>
+              &lt;input class="paymentFormInput" type="text" name="paymentLastName" placeholder="Last name"&gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;div class="paymentFormField"&gt;<br>
+              &lt;label for="paymentAddress"&gt;&lt;/label&gt;<br>
+              &lt;input class="paymentFormInput" type="text" name="paymentAddress" placeholder="Address"&gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;div class="paymentFormField"&gt;<br>
+              &lt;label for="paymentApartment"&gt;&lt;/label&gt;<br>
+              &lt;input class="paymentFormInput" type="text" name="paymentApartment" placeholder="Apartment, suite (optional)"&gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;div class="paymentFormField"&gt;<br>
+              &lt;label for="paymentCity"&gt;&lt;/label&gt;<br>
+              &lt;input class="paymentFormInput" type="text" name="paymentCity" placeholder="City"&gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;div class="paymentFormField"&gt;<br>
+              &lt;label for="paymentProvince"&gt;&lt;/label&gt;<br>
+                &lt;select class="paymentProvince" name="paymentProvince" value="Province"&gt;<br>
+                  &lt;option value="select"&gt;Province&lt;/option&gt;<br>
+                  &lt;option value="britishColumbia"&gt;British Columbia&lt;/option&gt;<br>
+                  &lt;option value="manitoba"&gt;Manitoba&lt;/option&gt;<br>
+                  &lt;option value="newBrunswick"&gt;New Brunswick&lt;/option&gt;<br>
+                  &lt;option value="newfoundland"&gt;Newfoundland&lt;/option&gt;<br>
+                  &lt;option value="northwestTerritories"&gt;Northwest Territories&lt;/option&gt;<br>
+                  &lt;option value="novaScotia"&gt;Nova Scotia&lt;/option&gt;<br>
+                  &lt;option value="nunavut"&gt;Nunavut&lt;/option&gt;<br>
+                  &lt;option value="ontario"&gt;Ontario&lt;/option&gt;<br>
+                  &lt;option value="pei"&gt;Prince Edward Island&lt;/option&gt;<br>
+                  &lt;option value="quebec"&gt;Quebec&lt;/option&gt;<br>
+                  &lt;option value="saskatchewan"&gt;Saskatchewan&lt;/option&gt;<br>
+                  &lt;option value="yukon"&gt;Yukon&lt;/option&gt;<br>
+                &lt;/select&gt;<br>
+
+                &lt;label for="paymentPostalCode"&gt;&lt;/label&gt;<br>
+                &lt;input class="paymentFormPostalCode" type="text" name="paymentPostalCode" placeholder="Postal Code"&gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;h2&gt;Contact&lt;/h2&gt;<br>
+            &lt;div class="paymentFormField"&gt;<br>
+              &lt;label for="emailInput"&gt;&lt;/label&gt;<br>
+              &lt;input type="email" name="emailInput" placeholder="Email Address"&gt;<br>
+              &lt;div id="newsletter"&gt;<br>
+                &lt;label for="paymentNewsLetterCheckbox"&gt;Email me with a newsletter and offers&lt;/label&gt;<br>
+                &lt;input type="checkbox" id="paymentNewsLetterCheckbox" name="newsletterCheck" placeholder=""&gt;<br>
+              &lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;div class="paymentFormField"&gt;<br>
+              &lt;label for="paymentPhone"&gt;&lt;/label&gt;<br>
+              &lt;input type="tel" name="paymentPhone" placeholder="Phone"&gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;h2&gt;Payment Information&lt;/h2&gt;<br>
+
+            &lt;div class="paymentFormField"&gt;<br>
+              &lt;label for="cardNumber"&gt;&lt;/label&gt;<br>
+              &lt;input type="text" name="cardNumber" placeholder="Credit/Debit Card Number"&gt;<br>
+            &lt;/div&gt;<br>
+
+            &lt;div class="paymentFormField"&gt;<br>
+              &lt;label for="expirationDate"&gt;&lt;/label&gt;<br>
+              &lt;input type="text" name="expirationDate" placeholder="Expiration MM/YY"&gt;<br>
+
+              &lt;label for="cvv"&gt;&lt;/label&gt;<br>
+              &lt;input type="text" name="cvv" placeholder="CVV"&gt;<br>
+
+            &lt;/div&gt;<br>
+
+            &lt;div class="paymentFormField"&gt;<br>
+              &lt;input class="paymentFormSubmit" type="submit" name="paymentSubmit" value="Submit"&gt;<br>
+              &lt;input class="paymentFormSubmit" type="reset" name="paymentReset" value="Reset"&gt;<br>
+            &lt;/div&gt;<br>
+          &lt;/form&gt;</code>
+        </div>
+
+
+
+        <form class="paymentForm" action="index.html" method="post">
+
+          <h2>Shipping address</h2>
+
+          <div class="paymentFormField">
+            <label for="paymentFirstName"></label>
+            <input class="paymentFormInput" type="text" name="paymentFirstName" placeholder="First name" >
+          </div>
+
+          <div class="paymentFormField">
+            <label for="paymentLastName"></label>
+            <input class="paymentFormInput" type="text" name="paymentLastName" placeholder="Last name">
+          </div>
+
+          <div class="paymentFormField">
+            <label for="paymentAddress"></label>
+            <input class="paymentFormInput" type="text" name="paymentAddress" placeholder="Address">
+          </div>
+
+          <div class="paymentFormField">
+            <label for="paymentApartment"></label>
+            <input class="paymentFormInput" type="text" name="paymentApartment" placeholder="Apartment, suite (optional)">
+          </div>
+
+          <div class="paymentFormField">
+            <label for="paymentCity"></label>
+            <input class="paymentFormInput" type="text" name="paymentCity" placeholder="City">
+          </div>
+
+          <div class="paymentFormField">
+            <label for="paymentProvince"></label>
+              <select class="paymentProvince" name="paymentProvince" value="Province">
+                <option value="select">Province</option>
+                <option value="britishColumbia">British Columbia</option>
+                <option value="manitoba">Manitoba</option>
+                <option value="newBrunswick">New Brunswick</option>
+                <option value="newfoundland">Newfoundland</option>
+                <option value="northwestTerritories">Northwest Territories</option>
+                <option value="novaScotia">Nova Scotia</option>
+                <option value="nunavut">Nunavut</option>
+                <option value="ontario">Ontario</option>
+                <option value="pei">Prince Edward Island</option>
+                <option value="quebec">Quebec</option>
+                <option value="saskatchewan">Saskatchewan</option>
+                <option value="yukon">Yukon</option>
+              </select>
+
+              <label for="paymentPostalCode"></label>
+              <input class="paymentFormPostalCode" type="text" name="paymentPostalCode" placeholder="Postal Code">
+          </div>
+
+          <h2>Contact</h2>
+          <div class="paymentFormField">
+            <label for="emailInput"></label>
+            <input type="email" name="emailInput" placeholder="Email Address">
+            <div id="newsletter">
+              <label for="paymentNewsLetterCheckbox">Email me with a newsletter and offers</label>
+              <input type="checkbox" id="paymentNewsLetterCheckbox" name="newsletterCheck">
+            </div>
+          </div>
+
+          <div class="paymentFormField">
+            <label for="paymentPhone"></label>
+            <input type="tel" name="paymentPhone" placeholder="Phone">
+          </div>
+
+          <h2>Payment Information</h2>
+
+          <div class="paymentFormField">
+            <label for="cardNumber"></label>
+            <input type="text" name="cardNumber" placeholder="Credit/Debit Card Number">
+          </div>
+
+          <div class="paymentFormField">
+            <label for="expirationDate"></label>
+            <input type="text" name="expirationDate" placeholder="Expiration MM/YY">
+
+            <label for="cvv"></label>
+            <input type="text" name="cvv" placeholder="CVV">
+
+          </div>
+
+          <div class="paymentFormField">
+            <input class="navSubmit" type="submit" name="paymentSubmit" value="Submit">
+            <input class="navReset" type="reset" name="paymentReset" value="Reset">
+          </div>
+        </form>
+      </section>
+
+      <h3>Checkout Cart</h3>
+      <section class="checkoutBox">
+
+        <div class="checkoutCode">
+          <h4>CSS selector:</h4>
+          <p>.checkoutCart</p>
+
+
+          <h4>Sample code:</h4>
+          <code>&lt;div class="checkoutCart"&gt;<br>
+            &lt;h1&gt;Cart&lt;/h1&gt;<br>
+            &lt;img src="img/sakuraProduct3199x3199.png" alt="Sakura snow skin mooncake" width="100" height="100"&gt;<br>
+            &lt;p&gt;Sakura Snow Skin Mooncake [2]   - | +&lt;/p&gt;<br>
+            &lt;h3&gt;$12.00&lt;/h3&gt;<br>
+            &lt;img src="img/sesameProduct3199x3199.png" alt="Sesame snow skin mooncake" width="100" height="100"&gt;<br>
+            &lt;p&gt;Sesame Snow Skin Mooncake [1]   - | +&lt;/p&gt;<br>
+              &lt;h3&gt;$7.00&lt;/h3&gt;<br>
+            &lt;div class="subtotal"&gt;<br>
+              &lt;h2&gt;Subtotal (3 Items) : $19.00 &lt;/h2&gt;<br>
+
+              &lt;label for="checkoutReset"&gt;&lt;/label&gt;<br>
+              &lt;input class="navReset" type="button" name="checkoutReset" value="Clear Cart"&gt;<br>
+
+              &lt;label for="checkoutButton"&gt;&lt;/label&gt;<br>
+              &lt;input class="defaultButton" type="button" name="checkoutButton" value="Checkout"&gt;<br>
+            &lt;/div&gt;<br>
+        &lt;/div&gt;<br></code>
+        </div>
+
+
+
+        <div class="checkoutCart">
+            <h1>Cart</h1>
+            <img src="img/sakuraProduct3199x3199.png" alt="Sakura snow skin mooncake" width="100" height="100">
+            <p>Sakura Snow Skin Mooncake [2]   - | +</p>
+            <h3>$12.00</h3>
+            <img src="img/sesameProduct3199x3199.png" alt="Sesame snow skin mooncake" width="100" height="100">
+            <p>Sesame Snow Skin Mooncake [1]   - | +</p>
+              <h3>$7.00</h3>
+            <div class="subtotal">
+              <h2>Subtotal (3 Items) : $19.00 </h2>
+
+              <label for="checkoutReset"></label>
+              <input class="navReset" type="button" name="checkoutReset" value="Clear Cart">
+
+              <label for="checkoutButton"></label>
+              <input class="defaultButton" type="button" name="checkoutButton" value="Checkout">
+            </div>
+        </div>
+      </section>
+
+      <section id="branding">
+        <h1>Branding Basics</h1>
+        <h2>What does it offer?</h2>
+        <p>Luna is an online retailer dedicated to offering snow skin mooncakes with unique flavours and healthier ingredients. Snow skin mooncakes (冰皮月餅) are a non-baked Chinese dessert traditionally enjoyed cold during the Mid-Autumn Festival and originating from Hong Kong. With a growing interest in Asian desserts in Vancouver, we aim to introduce this traditional Chinese delicacy to the public, particularly the younger generation. We prioritize customer health through our ingredient choices, opting for fruits and glutinous rice as a healthier alternative to traditional mooncakes. Additionally, specializing in flavours, [PLACEHOLDER] offers a diverse range of modern and innovative flavours, catering to food enthusiasts who appreciate exploring new culinary experiences.</p>
+
+        <h2>Who is Luna to potential customers? Why might someone to purchase a product from us?</h2>
+
+        <p>Luna's target audience for these products includes food enthusiasts, health-conscious individuals, and families. With our diverse range of unique flavours, we cater to food enthusiasts who enjoy exploring new desserts and flavours. Additionally, snow skin mooncakes feature healthier ingredients compared to traditional mooncakes, making them appealing to those seeking a healthier alternative. Moreover, as mooncakes symbolize "completeness and reunion" in Chinese culture, families can enjoy them together. Our unique flavours also attract the younger generation, allowing them to experience and learn more about the culture through our products.</p>
+
+          <h2>Customer Profiles</h2>
+
+          <h3 class="profileName">ALEX - 37: HEALTH CONSCIOUS INDIVIDUALS</h3>
+
+          <ul>
+            <li>A health nut who cares about the food that he consumes.</li>
+            <li>Wants to celebrate the Chinese Mid-Autumn Festival with a mooncake, but he is looking for a healthier alternative.</li>
+          </ul>
+
+          <h3 class="profileName">SARAH - 23: FOOD ENTHUSIAST AND FOOD BLOGGER</h3>
+
+          <ul>
+            <li>A food blogger who likes to try food from different cultures.</li>
+            <li>Enjoys trying new food photography, blogging, and eating.</li>
+            <li>Wants to find a dessert that is unique and aesthetic-pleasing for her food blog.</li>
+          </ul>
+
+          <h3 class="profileName">RYAN - 45: PARENTS</h3>
+
+          <ul>
+            <li>Immigrated from Hong Kong to Vancouver recently and has a wife and three children from the ages of 5-9.</li>
+            <li>Feels homesick and fears that his children are losing their cultural roots.</li>
+            <li>Wants to eat a mooncake with his family and finds a flavour that his children will enjoy as well.</li>
+          </ul>
+
+        <div class="brandingBox">
+            <img class="brandingimg1" src="img/typeStyling1920x1080.png" width="960" height="540" alt="type styling">
+            <p class="brandingp1">For the main headers, we have opted for PP Right Didone due to its eye-catching and elegant appearance, with a touch of quirkiness. To complement the bold design of PP Right Didone, we have chosen the clean Noto Sans HK for its modular flexibility and readability. Additionally, we selected Noto Sans HK (Hong Kong) to accommodate the inclusion of Chinese characters within the website's content.</p>
+
+            <img class="brandingimg2" src="img/systemFonts1920x1080.png" width="960" height="540" alt="system font styling ">
+            <p lass="brandingp2">In terms of usability, it's essential to prioritize system fonts if the specified typefaces are unavailable or cannot be integrated into the markup. Considering the available system typefaces, Garamond for h1, Courier New for h2, and Arial for body copy are the most comparable options to the aforementioned typefaces. While they may not be exact matches, they possess similar qualities and fulfill equivalent roles effectively.</p>
+
+            <img class="brandingimg3" src="img/colourStyling1920x1080.png" width="960" height="540" alt="colour styling">
+            <p lass="brandingp3">Thoughtfully designed products are integral to the unique identity of our company. In alignment with this ethos, we have curated a color palette that enables our products to take center stage. A white background serves as the canvas, facilitating high visibility and contrast, particularly in bright and bold-colored environments where our customers may find themselves. This choice allows our products to stand out prominently against the crisp white backdrop.
+
+                Furthermore, dividers are presented in a soft grey tone rather than black, creating a more subtle transition and ensuring a seamless user interface experience. This approach aims to ease customers into the interface, fostering a sense of comfort rather than discomfort.
+
+                Adding a touch of color, the pastel pink accent serves multiple purposes. It enhances the visual appeal by introducing contrast between the products, the white space, and the divider color. Moreover, the pastel pink hue conveys a sense of softness and warmth, aligning with the symbolism of completeness and reunion embodied by our signature product, the snow skin mooncake.</p>
+        </div>
+
+
+
+      </section>
+
+    <section id="citations">
+      <h1>Citations</h1>
+
+      <ul>
+        <li>W3Schools. writer. 2021. <strong>HTML &lt;label&gt; tag [Resource]</strong>. Retrieved from <a href="https://www.w3schools.com/tags/tag_label.asp">https://www.w3schools.com/tags/tag_label.asp"</a>https://www.w3schools.com/tags/tag_label.asp">https://www.w3schools.com/tags/tag_label.asp</li>
+
+        <li>W3Schools. writer. 2021. <strong>text transform [Resource]</strong>. Retrieved from <a href="https://www.w3schools.com/cssref/pr_text_text-transform.php"</a> https://www.w3schools.com/cssref/pr_text_text-transform.php</li>
+
+        <li>Cottage, B. (n.d.). The Baker’s cottage. <strong>Black Gold Snow Skin Mooncake[Images]</strong>. Retrieved from <a href="https://thebakerscottage.com/en/snow-skin-mooncakes ">https://thebakerscottage.com/en/snow-skin-mooncakes </a></li>
+
+        <li>Cottage, B. (n.d.). The Baker’s cottage. <strong>Musang King Snow Skin Mooncake[Images]</strong>. Retrieved from <a href="https://thebakerscottage.com/en/snow-skin-mooncakes ">https://thebakerscottage.com/en/snow-skin-mooncakes </a></li>
+
+        <li>Cottage, B. (n.d.). The Baker’s cottage. <strong>Dark Chocolate Truffle Snow Skin Mooncake[Images]</strong>. Retrieved from <a href="https://thebakerscottage.com/en/snow-skin-mooncakes ">https://thebakerscottage.com/en/snow-skin-mooncakes </a></li>
+
+        <li>Cottage, B. (n.d.). The Baker’s cottage. <strong>Peachy Mango Snow Skin Mooncake[Images]</strong>. Retrieved from <a href="https://thebakerscottage.com/en/snow-skin-mooncakes ">https://thebakerscottage.com/en/snow-skin-mooncakes </a></li>
+
+        <li>Cottage, B. (n.d.). The Baker’s cottage. <strong>Yam Snow Skin Mooncake[Images]</strong>. Retrieved from <a href="https://thebakerscottage.com/en/snow-skin-mooncakes ">https://thebakerscottage.com/en/snow-skin-mooncakes </a></li>
+
+        <li>Cottage, B. (n.d.). The Baker’s cottage. <strong>White Lotus Snow Skin Mooncake[Images]</strong>. Retrieved from <a href="https://thebakerscottage.com/en/snow-skin-mooncakes ">https://thebakerscottage.com/en/snow-skin-mooncakes </a></li>
+
+        <li>Cottage, B. (n.d.). The Baker’s cottage. <strong>Pandan Custard Snow Skin Mooncake[Images]</strong>. Retrieved from <a href="https://thebakerscottage.com/en/snow-skin-mooncakes ">https://thebakerscottage.com/en/snow-skin-mooncakes </a></li>
+
+        <li>Cottage, B. (n.d.). The Baker’s cottage. <strong>Sakura Custard Snow Skin Mooncake[Images]</strong>. Retrieved from <a href="https://thebakerscottage.com/en/snow-skin-mooncakes ">https://thebakerscottage.com/en/snow-skin-mooncakes </a></li>
+
+        <li>Cottage, B. (n.d.). Ding Mooncake. (n.d.). Snow Skin Mooncake – Mooncake Singapore: Award-winning Mooncakes by Ding Bakery. Mooncake Singapore | Award-Winning Mooncakes by Ding Bakery - Premium Mooncakes Masterly Handmade to Perfection. <strong>Avocado Snow Skin Mooncake[Image]</strong>. Retrieved from <a href="https://www.dingmooncake.com/product-category/mooncake/snow-skin-mooncake/ ">https://www.dingmooncake.com/product-category/mooncake/snow-skin-mooncake/</a></li>
+
+        <li>Cottage, B. (n.d.). Ding Mooncake. (n.d.). Snow Skin Mooncake – Mooncake Singapore: Award-winning Mooncakes by Ding Bakery. Mooncake Singapore | Award-Winning Mooncakes by Ding Bakery - Premium Mooncakes Masterly Handmade to Perfection. <strong>Hazelnut Snow Skin Mooncake[Image]</strong>. Retrieved from <a href="https://www.dingmooncake.com/product-category/mooncake/snow-skin-mooncake/ ">https://www.dingmooncake.com/product-category/mooncake/snow-skin-mooncake/</a></li>
+
+        <li>Cottage, B. (n.d.). Ding Mooncake. (n.d.). Snow Skin Mooncake – Mooncake Singapore: Award-winning Mooncakes by Ding Bakery. Mooncake Singapore | Award-Winning Mooncakes by Ding Bakery - Premium Mooncakes Masterly Handmade to Perfection. <strong>Coconut Snow Skin Mooncake[Image]</strong>. Retrieved from <a href="https://www.dingmooncake.com/product-category/mooncake/snow-skin-mooncake/ ">https://www.dingmooncake.com/product-category/mooncake/snow-skin-mooncake/</a></li>
+
+        <li>Jasma, J. (2022, August 15). Blue Snow Skin Mooncakes. Jasma Fusion Cuisine. <strong>Blue Snow Skin Mooncakes[Image]</strong>. Retrieved from <a href="https://www.dingmooncake.com/product-category/mooncake/snow-skin-mooncake/ ">https://www.dingmooncake.com/product-category/mooncake/snow-skin-mooncake/</a></li>
+
+        <li>Guo, W. (2022, August 2). Snow skin mooncake with custard filling (冰皮月饼). Red House Spice. <strong>Green Custard Snow Skin Mooncake[Image]</strong>. Retrieved from <a href="https://www.dingmooncake.com/product-category/mooncake/snow-skin-mooncake/ ">https://www.dingmooncake.com/product-category/mooncake/snow-skin-mooncake/</a></li>
+
+
+        <li>Snow skin mooncake set. Daan Go Cake Lab | Vancouver. <strong>Premium D24 Durian Snow Skin Mooncake[Image]</strong>. Retrieved from <a href="https://van.daango.com/products/mooncake-set ">https://van.daango.com/products/mooncake-set</a></li>
+
+        <li>Snow skin mooncake set. Daan Go Cake Lab | Vancouver. <strong>Matcha Yuzu Snow Skin Mooncake[Image]</strong>. Retrieved from <a href="https://van.daango.com/products/mooncake-set ">https://van.daango.com/products/mooncake-set</a></li>
+
+        <li>Snow skin mooncake set. Daan Go Cake Lab | Vancouver. <strong>Jamocha Nut Snow Skin Mooncake[Image]</strong>. Retrieved from <a href="https://van.daango.com/products/mooncake-set ">https://van.daango.com/products/mooncake-set</a></li>
+
+        <li>Snow skin mooncake set. Daan Go Cake Lab | Vancouver. <strong>Salted Egg Yolk Snow Skin Mooncake[Image]</strong>. Retrieved from <a href="https://van.daango.com/products/mooncake-set ">https://van.daango.com/products/mooncake-set</a></li>
+
+      </ul>
+
+    </section>
+
+
+
+  </body>
+</html>
