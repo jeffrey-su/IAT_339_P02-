@@ -11,10 +11,6 @@ body {
 
 }
 
-*{
-
-}
-
 .infoLink{
     color: #E8C6D6;
     text-decoration: underline;
@@ -47,7 +43,7 @@ h2 {
   font-family: "Noto Sans HK", 'Courier New', sans-serif;
   font-weight: 200;
   color: #353535;
-  font-size: 1em;
+  font-size: 1.5rem;
 }
 
 h3 {
@@ -171,22 +167,33 @@ nav a:hover, nav a:focus {
     text-align: center;
 }
 
+.hero1Img{
+  position: absolute;
+}
+
 .confirmContent{
     display: block;
     line-height: 1rem;
-    position: absolute;
-    bottom:17vw;
-    left:15vw;
+    position: relative;
+    bottom: 53vh;
 
+}
+
+.confirmContent h2{
+  color: #FAFAFA;
+  font-size: 2vw;
 }
 
 .confirmPurchase{
     display: block;
     line-height: 1rem;
-    position: absolute;
-    bottom:17vw;
-    left:25vw;
+    position: relative;
+    bottom: 53vh;
+}
 
+.confirmPurchase h2{
+  color: #FAFAFA;
+  font-size: 3vw;
 }
 
 /*
@@ -318,6 +325,7 @@ footer img{
 #newsletter {
   font-size: 0.75rem;
 }
+
 select{
   color: #727272;
   width: 15rem;
@@ -455,11 +463,11 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
 }
 
 .logotype{
-    font-family: 'PP Right Didone - Spatial Fine', 'Garamond', serif;
+  font-family: 'PP Right Didone - Spatial Fine', 'Garamond', serif;
   font-size: 2rem;
   font-weight: bold;
   color: #353535;
-
+  margin-top: 0px;
 }
 
 /* Checkout Cart ------------------------------------------------------------------------------------------ */
@@ -479,9 +487,7 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
     flex-wrap: wrap;
     justify-content: space-around;
     text-align: left;
-
 }
-
 
 .boxB{
     padding-left: 3vw;
@@ -575,7 +581,7 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
   color: #FAFAFA;
 }
 
-.hero2Content h2, .hero3Content h2, .confirmContent h2, .confirmPurchase h2 {
+.hero2Content h2, .hero3Content h2{
   color: #323232;
   font-size: 3vw;
 }
@@ -653,7 +659,7 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
 .productButton{
     padding-left: 1vw;
 }
-.productBorder h3{
+.productBorder h2, .productBorder h3{
   padding-left: 1rem;
 }
 
@@ -906,6 +912,7 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
 
 /* media queries --------------------------------------------------------------------------------*/
  @media (width <= 1210px){
+
     .hero2Content, .hero3Content{
      max-width: 60vw;
    }
@@ -952,7 +959,7 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
      font-size: 5vw;
    }
 
-   .hero1Content p, .hero2Content p, .hero3Content p, .allProducts p, .confirmContent p{
+   .hero1Content p, .hero2Content p, .hero3Content p, .allProducts p, .confirmContent p, .aboutContent a{
      font-size: 3vw;
    }
 
@@ -984,6 +991,21 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
        max-width: 50vw;
        font-size: 2vw;
        text-align: center;
+   }
+
+   .confirmContent{
+       display: block;
+       line-height: 1rem;
+       position: relative;
+       bottom: 30vh;
+
+   }
+
+   .confirmPurchase{
+       display: block;
+       line-height: 1rem;
+       position: relative;
+       bottom: 30vh;
    }
  }
 
@@ -1052,6 +1074,29 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
    nav{
      font-size: 3vw;
    }
+
+   .aboutCopy{
+     font-size: 3vw;
+     max-width: 68%;
+     padding-left: 16vw;
+     padding-right: 16vw;
+   }
+
+   .confirmContent{
+       display: block;
+       line-height: 1rem;
+       position: relative;
+       bottom: 15vh;
+
+   }
+
+   .confirmPurchase{
+       display: block;
+       line-height: 1rem;
+       position: relative;
+       bottom: 15vh;
+   }
+
  }
 
 /* typefaces --------------------------------------------------------------------------------*/
