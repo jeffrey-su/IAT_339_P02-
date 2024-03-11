@@ -462,88 +462,6 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
 
 }
 
-/* Landing Page -------------------------------------------------------------------------------------------*/
-
-
-.hero1{
-  position: relative;
-}
-
-.hero1Content{
-  display: block;
-  line-height: 1rem;
-  position: absolute;
-  bottom: 15vw;
-  left: 6vw;
-  max-width: 28vw;
-}
-
-.hero2{
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: row-reverse;
-  padding-top: 4vw;
-  padding-bottom: 6vw;
-}
-
-.hero2Content{
-  padding-right: 12vw;
-  padding-bottom: 4vw;
-  line-height: 2vw;
-  color: #323232;
-  max-width: 50vw;
-}
-
-.hero2Img{
-  width: 300px;
-  height: 300px;
-  padding-right: 15%;
-}
-
-
-.hero3Content{
-  display: block;
-  line-height: 2vw;
-  max-width: 25vw;
-}
-.hero4{
-  padding-top: 6vw;
-}
-
-.hero4Content{
-  display: block;
-  line-height: 2vw;
-  max-width: 50vw;
-}
-.hero1Content h2{
-  color: #FAFAFA;
-  font-size: 3vw;
-}
-
-.hero1Content p{
-  font-size: 1vw;
-  color: #FAFAFA;
-}
-
-.hero2Content h2, .hero3Content h2, .hero4Content h2, .confirmContent h2, .confirmPurchase h2 {
-  color: #323232;
-  font-size: 3vw;
-}
-
-.hero2Content p, .hero3Content p, .hero4Content p{
-  color: #323232;
-  font-size: 1vw;
-}
-
-.allProducts{
-  color: #323232;
-  padding-top: 3vw;
-  padding-bottom: 3vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 /* Checkout Cart ------------------------------------------------------------------------------------------ */
 .column{
     padding-top:2rem;
@@ -603,6 +521,97 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
   display:block;
   width: auto;
   max-width: 100%;
+}
+
+
+
+.hero1{
+  position: relative;
+}
+
+.hero1Content{
+  display: block;
+  line-height: 1rem;
+  position: absolute;
+  bottom: 15vw;
+  left: 6vw;
+  max-width: 28vw;
+}
+
+.hero2{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+  padding-top: 4vw;
+}
+
+.hero2Content{
+  padding-right: 12vw;
+  padding-bottom: 4vw;
+  line-height: 2vw;
+  color: #323232;
+  max-width: 50vw;
+}
+
+.hero2Img{
+  width: 300px;
+  height: 300px;
+  padding-right: 15%;
+}
+
+
+.hero3Content{
+  display: block;
+  line-height: 2vw;
+  max-width: 25vw;
+}
+.hero4{
+  padding-top: 6vw;
+}
+
+.hero4Content{
+  display: block;
+  line-height: 2vw;
+  max-width: 50vw;
+}
+.hero1Content h2{
+  color: #FAFAFA;
+  font-size: 3vw;
+}
+
+.hero1Content p{
+  font-size: 1vw;
+  color: #FAFAFA;
+}
+
+.hero2Content h2, .hero3Content h2, .hero4Content h2, .confirmContent h2, .confirmPurchase h2 {
+  color: #323232;
+  font-size: 3vw;
+}
+
+.hero2Content p, .hero3Content p, .hero4Content p{
+  color: #323232;
+  font-size: 1vw;
+}
+
+.allProducts{
+  color: #323232;
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+  display: flex;
+  justify-content: center;
+}
+
+.allProductsContent{
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.allProductsContent h2{
+  font-size: 1.5em;
+  font-style: italic;
 }
 
 /*
@@ -1006,6 +1015,13 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
 
    .checkoutCart p{
      font-size: 4vw;
+   }
+ }
+
+ @media (width < 404px){
+
+   nav{
+     font-size: 3vw;
    }
  }
 
