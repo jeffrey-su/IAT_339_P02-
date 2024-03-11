@@ -517,13 +517,11 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
   width: auto;
 }
 
-.landingHero img, .productListingHero img{
+.landingHero img{
   display:block;
   width: auto;
   max-width: 100%;
 }
-
-
 
 .hero1{
   position: relative;
@@ -554,8 +552,6 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
 }
 
 .hero2Img{
-  width: 300px;
-  height: 300px;
   padding-right: 15%;
 }
 
@@ -569,11 +565,6 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
   padding-top: 6vw;
 }
 
-.hero4Content{
-  display: block;
-  line-height: 2vw;
-  max-width: 50vw;
-}
 .hero1Content h2{
   color: #FAFAFA;
   font-size: 3vw;
@@ -584,12 +575,12 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
   color: #FAFAFA;
 }
 
-.hero2Content h2, .hero3Content h2, .hero4Content h2, .confirmContent h2, .confirmPurchase h2 {
+.hero2Content h2, .hero3Content h2, .confirmContent h2, .confirmPurchase h2 {
   color: #323232;
   font-size: 3vw;
 }
 
-.hero2Content p, .hero3Content p, .hero4Content p{
+.hero2Content p, .hero3Content p{
   color: #323232;
   font-size: 1vw;
 }
@@ -607,12 +598,17 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+}
+.allProductsContent h1{
+  margin-bottom: 0px;
 }
 
 .allProductsContent h2{
   font-size: 1.5em;
   font-style: italic;
 }
+
 
 /*
   Product Listing Page  --------------------------------------------------------------------------------
@@ -910,21 +906,54 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
 
 /* media queries --------------------------------------------------------------------------------*/
  @media (width <= 1210px){
-    .hero2Content, .hero3Content, .hero4Content {
+    .hero2Content, .hero3Content{
      max-width: 60vw;
    }
-   .hero1Content h2, .hero2Content h2, .hero3Content h2, .hero4Content h2 {
+
+   .hero1{
+     display: flex;
+     flex-direction: column;
+     position: static;
+   }
+
+   .hero1Content{
+     align-self: center;
+     line-height: 2rem;
+     position: static;
+     max-width: 60%;
+     padding-top: 2vw;
+     text-align: center;
+   }
+
+   .hero1Content p, .hero1Content h2{
+     color: #323232;
+   }
+
+   .hero2{
+     display: flex;
+     flex-direction: column;
+   }
+   .hero2Img{
+      padding-right: 0px;
+   }
+
+   .hero2Content{
+     align-self: center;
+     padding-right: 0px;
+     line-height: 1.5rem;
+     padding-top: 5vw;
+     text-align: center;
+   }
+
+   .allProducts{
+     text-align: center;
+   }
+   .hero1Content h2, .hero2Content h2, .hero3Content h2{
      font-size: 5vw;
    }
 
-   .hero1Content p, .hero2Content p, .hero3Content p, .hero4Content p, .confirmContent p{
+   .hero1Content p, .hero2Content p, .hero3Content p, .allProducts p, .confirmContent p{
      font-size: 3vw;
-   }
-
-    .hero2Content, .hero3Content, .hero4Content{
-     display: block;
-     line-height: 3vw;
-     max-width: 80vw;
    }
 
    footer p, .wrapper2 p, .checkoutInfo p, .wrapper p{
