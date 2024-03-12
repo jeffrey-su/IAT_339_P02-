@@ -144,6 +144,8 @@ nav a:hover, nav a:focus {
     border:none;
     border-radius: 25px;
     flex-shrink: 0;
+    max-width: 100%;
+    height: auto;
 }
 
 .headerLink{
@@ -170,15 +172,12 @@ nav a:hover, nav a:focus {
   Confirmation Pages --------------------------------------------------------------------
 */
 
-.hero1Img{
-  position: absolute;
-}
-
 .confirmContent{
     display: block;
     line-height: 1rem;
-    position: relative;
-    bottom: 53vh;
+    position: absolute;
+    left: 17%;
+    bottom: 30%;
 
 }
 
@@ -190,8 +189,9 @@ nav a:hover, nav a:focus {
 .confirmPurchase{
     display: block;
     line-height: 1rem;
-    position: relative;
-    bottom: 53vh;
+    position: absolute;
+    left: 25%;
+    bottom: 40%;
 }
 
 .confirmPurchase h2{
@@ -1057,21 +1057,6 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
      width: 20vw;
    }
 
-   .confirmContent{
-       display: block;
-       line-height: 1rem;
-       position: relative;
-       bottom: 30vh;
-
-   }
-
-   .confirmPurchase{
-       display: block;
-       line-height: 1rem;
-       position: relative;
-       bottom: 30vh;
-   }
-
    .aboutContainer{
      display: flex;
      flex-wrap: wrap-reverse;
@@ -1100,7 +1085,13 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
      width: 100%;
    }
 
+   .confirmContent{
+       bottom: 40%;
+   }
 
+   .confirmPurchase{
+       bottom: 40%;
+   }
  }
 
  @media (width <= 923px){
@@ -1134,7 +1125,16 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
      font-size: 4vw;
    }
  }
+ @media (width < 800px) {
+   .confirmContent{
+       bottom: 50%;
+   }
 
+   .confirmPurchase{
+       bottom: 50%;
+   }
+
+ }
  @media (width < 565px){
 
    #paymentFormInput{
@@ -1160,6 +1160,15 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
    .aboutContent1 p, .aboutContent2 p{
        font-size: 3vw;
    }
+
+   .confirmContent{
+       bottom: 60%;
+   }
+
+   .confirmPurchase{
+       bottom: 60%;
+   }
+
  }
 
  @media (width < 404px){
@@ -1169,18 +1178,11 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
    }
 
    .confirmContent{
-       display: block;
-       line-height: 1rem;
-       position: relative;
-       bottom: 15vh;
-
+       bottom: 65%;
    }
 
    .confirmPurchase{
-       display: block;
-       line-height: 1rem;
-       position: relative;
-       bottom: 15vh;
+       bottom: 65%;
    }
 
  }
