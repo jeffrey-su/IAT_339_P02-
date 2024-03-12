@@ -543,7 +543,7 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
 
 .hero1Content{
   display: block;
-  line-height: 1rem;
+  line-height: 1.5rem;
   position: absolute;
   bottom: 15vw;
   left: 6vw;
@@ -560,7 +560,7 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
 .hero2Content{
   padding-right: 12vw;
   padding-bottom: 4vw;
-  line-height: 2vw;
+  line-height: 1.5rem;
   color: #323232;
   max-width: 50vw;
 }
@@ -597,7 +597,7 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
 .confirmContent h2, .confirmPurchase h2{
     color: #FAFAFA;
     font-size: 3vw;
-    
+
 }
 
 .hero2Content p, .hero3Content p{
@@ -810,17 +810,53 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
 
 /* About Page--------------------------------------------------------------------------------------- */
 
+.aboutHero{
+  padding-top: 3vw;
+  width: auto;
+}
+
+.aboutHero img{
+  width: auto;
+  max-width: 100%;
+  position: absolute;
+}
+
 .aboutCopy{
+  color: #FAFAFA;
   max-width: 50vw;
   font-size: 1vw;
-    padding-left:30vw;
-    padding-right:30vw;
+  line-height: 1.5rem;
 }
 
-.aboutContent{
-    text-align: center;
+.aboutContent1{
+  position: relative;
+  color: #FAFAFA;
+  top: 25vw;
+  left: 10vw;
+  max-width: 30%
 }
 
+.aboutContent1 h1{
+    color: #FAFAFA;
+}
+
+.aboutContent2{
+  position: relative;
+  color: #FAFAFA;
+  top: 50vw;
+  left: 60vw;
+  max-width: 30%
+}
+
+.aboutContent2 h1{
+    color: #FAFAFA;
+}
+
+.aboutContent3{
+  padding-top: 70vw;
+  display: flex;
+  justify-content: center;
+}
 .centerButton{
   padding-bottom: 3vw;
   display: flex;
@@ -1011,12 +1047,6 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
      width: 20vw;
    }
 
-   .aboutCopy{
-       max-width: 50vw;
-       font-size: 2vw;
-       text-align: center;
-   }
-
    .confirmContent{
        display: block;
        line-height: 1rem;
@@ -1031,6 +1061,13 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
        position: relative;
        bottom: 30vh;
    }
+
+
+   .aboutContent3{
+     padding-top: 60vw;
+     display: flex;
+     justify-content: center;
+   }
  }
 
  @media (width <= 1102px) {
@@ -1039,6 +1076,22 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
      margin-right: 1vw;
      width: 100%;
    }
+
+   .aboutContent2{
+     position: relative;
+     color: #FAFAFA;
+     top: 40vw;
+     left: 60vw;
+     max-width: 30%
+   }
+
+   .aboutContent3{
+     padding-top: 55vw;
+     display: flex;
+     justify-content: center;
+   }
+
+
  }
 
  @media (width <= 923px){
