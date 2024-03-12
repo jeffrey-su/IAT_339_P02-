@@ -130,6 +130,7 @@ nav a:hover, nav a:focus {
   font-weight: 400;
   padding: 0.5rem;
 }
+
 .titleNav{
   display: flex;
   flex-direction: row;
@@ -159,13 +160,16 @@ nav a:hover, nav a:focus {
   opacity: 70%;
 }
 
-/*
-  Confirm
-*/
-
 .centerContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
 }
+
+/*
+  Confirmation Pages
+*/
 
 .hero1Img{
   position: absolute;
@@ -199,7 +203,6 @@ nav a:hover, nav a:focus {
 /*
   INTERACTIVE ELEMENTS -------------------
 */
-
 
 /* Styling for the navigation button */
 .defaultButton {
@@ -240,6 +243,7 @@ nav a:hover, nav a:focus {
   width: 10vw;
   padding: 8px;
   margin: 8px 0;
+  cursor: pointer;
 }
 
 .navSubmit:focus, .navSubmit:hover {
@@ -265,6 +269,7 @@ nav a:hover, nav a:focus {
   width: 10vw;
   padding: 8px;
   margin: 8px 0;
+  cursor: pointer;
 }
 
 .navReset:focus, .navReset:hover {
@@ -387,9 +392,6 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
   justify-content: space-around;
 }
 
-.paymentFormPage{
-}
-
 .subtotal{
   border-top: 3px solid #727272;
 }
@@ -399,26 +401,12 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
 
 }
 
-.grid.add-gutters {
-  grid-column-gap: 2rem;
-	grid-row-gap: 5rem;
-}
-
-.grid {
-	display: grid;
-}
 .productDetailBox{
   border-top: solid 2px #E3E3E3;
   padding: 2rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
   display: flex;
-}
-.grid.two-column {
-    grid-template-columns: 1fr 1fr;
-	grid-template-rows: auto;
-    grid-auto-flow: row;
-    padding:2.5rem;
 }
 
 .wrapper {
@@ -471,10 +459,6 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
 }
 
 /* Checkout Cart ------------------------------------------------------------------------------------------ */
-.column{
-    padding-top:2rem;
-}
-
 .sectionGap{
     border-top: solid 2px #E3E3E3;
     padding: 2rem;
@@ -485,7 +469,7 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
 .wrapper2 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-around;
     text-align: left;
 }
 
@@ -494,7 +478,7 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
     align-items: baseline;
 }
 
-.boxB H2{
+.boxB h2{
     font-size: 35px;
 }
 
@@ -569,7 +553,6 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
   padding-right: 15%;
 }
 
-
 .hero3Content{
   display: block;
   line-height: 2vw;
@@ -629,14 +612,19 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
   font-style: italic;
 }
 
+.productsIndex{
+    margin-top: 5rem;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 
 /*
   Product Listing Page  --------------------------------------------------------------------------------
 */
-.productListingHero{
-  padding-top: 3vw;
-  width: 100%;
-}
 .productNavLink{
   color: #353535;
 }
@@ -649,16 +637,6 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
     flex-wrap: wrap;
     justify-content: center;
 }
-
-.productsIndex{
-    margin-top: 5rem;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 
 .product img{
   padding: 5rem;
@@ -673,7 +651,6 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
 
 .productBorder:hover, .productBorder:focus{
     box-shadow: 0 4px 8px 0 rgba(232, 198, 214, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
 
 .productBorder img{
@@ -683,6 +660,7 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
 .productButton{
     padding-left: 1vw;
 }
+
 .productBorder h2, .productBorder h3{
   padding-left: 1rem;
 }
@@ -692,7 +670,7 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
 */
 
 .quantityButton{
-      font-family: "Noto Sans HK", 'Courier New', sans-serif;
+  font-family: "Noto Sans HK", 'Courier New', sans-serif;
   font-weight: 200;
   font-size: 1vw;
   color: #E8C6D6;
@@ -702,12 +680,12 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
   width: 5vw;
   padding: 8px;
   margin:8px 0;
-    cursor: pointer;
+  cursor: pointer;
 
 }
 
 .dropDownButton{
-      font-family: "Noto Sans HK", 'Courier New', sans-serif;
+  font-family: "Noto Sans HK", 'Courier New', sans-serif;
   font-weight: 200;
   font-size: 1vw;
   color: #E8C6D6;
@@ -717,7 +695,7 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
   width: 20vw;
   padding: 8px;
   margin:8px 0;
-    cursor: pointer;
+  cursor: pointer;
 
 }
 
@@ -745,7 +723,6 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
     align-items: center;
 
 }
-
 
 .reviewHeader{
     font-weight: bold;
@@ -805,8 +782,6 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
     color: #7C7C7C;
 
 }
-
-
 
 /* About Page--------------------------------------------------------------------------------------- */
 
@@ -872,13 +847,6 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
 .contactContent{
   display: flex;
   justify-content: center;
-
-}
-
-.centerContent{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 
 }
 
@@ -1178,11 +1146,13 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
 
 /* typefaces --------------------------------------------------------------------------------*/
 @font-face {
+    
     font-family: 'PP Right Didone - Spatial Fine';
     src: url('../fonts/PPRightDidone-SpatialFine.woff2') format('woff2'),
         url('../fonts/PPRightDidone-SpatialFinet.woff') format('woff'),
         url('../fonts/PPRightDidone-SpatialFine.ttf') format('truetype');
+    
     font-weight: 300;
     font-style: normal;
-    font-display: swap;
+
 }
