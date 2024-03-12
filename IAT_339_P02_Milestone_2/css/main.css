@@ -485,13 +485,21 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
 .wrapper2 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
     text-align: left;
 }
 
 .boxB{
-    padding-left: 3vw;
+    margin-left: 3vw;
     align-items: baseline;
+}
+
+.boxB H2{
+    font-size: 35px;
+}
+
+.boxB p{
+    font-size: 20px;
 }
 
 .removeLink{
@@ -634,13 +642,23 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
 }
 
 .products{
-  margin-top: 5rem;
-  padding-left: 20vw;
-  padding-right: 20vw;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+    margin-top: 5rem;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+.productsIndex{
+    margin-top: 5rem;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 
 .product img{
   padding: 5rem;
