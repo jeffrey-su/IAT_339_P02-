@@ -8,29 +8,17 @@ body {
   background: #FAFAFA;
   color: #353535;
   margin: 0;
-
 }
 
-.infoLink{
-    color: #E8C6D6;
-    text-decoration: underline;
+*:focus{
+  outline: none;
 }
 
-.infoLink:hover, .infoLink:focus{
-    color:#E8C6D6;
-    text-decoration: none;
-}
-
-.element {
-  padding-bottom: 2rem;
-  border-top-width: 0.15rem;
-  border-top-style: solid;
-  border-top-color: #727272;
-}
 section{
     margin-bottom: 4rem;
 }
 
+/* HEADINGS ------------------------------------------------------------------------------------------------------- */
 h1{
   font-family: 'PP Right Didone - Spatial Fine', 'Garamond', serif;
   font-size: 2.5rem;
@@ -64,6 +52,7 @@ h4 {
   font-size: auto;
 }
 
+/* Text Elements ------------------------------------------------------------------------------------- */
 p {
   font-family: "Noto Sans HK", 'Courier New', sans-serif;
   font-weight: 300;
@@ -84,10 +73,6 @@ li {
 
 input{
   border-color: #E8C6D6;
-}
-
-*:focus{
-  outline: none;
 }
 
 .p-product{
@@ -119,6 +104,7 @@ nav a:hover, nav a:focus {
   color: #727272;
 }
 
+/* Navigation -------------------------------------------------------------------------------- */
 .mainNav{
   justify-content: space-around;
   text-decoration: none;
@@ -137,8 +123,21 @@ nav a:hover, nav a:focus {
   justify-content: center;
 }
 
-.homeNavLink{
-  color: #353535;
+.infoLink{
+    color: #E8C6D6;
+    text-decoration: underline;
+}
+
+.infoLink:hover, .infoLink:focus{
+    color:#E8C6D6;
+    text-decoration: none;
+}
+
+.element {
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: #727272;
 }
 
 .imgDetail{
@@ -168,7 +167,7 @@ nav a:hover, nav a:focus {
 }
 
 /*
-  Confirmation Pages
+  Confirmation Pages --------------------------------------------------------------------
 */
 
 .hero1Img{
@@ -415,12 +414,10 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-
 }
 
 .addPadding{
     padding-left: 3vw;
-
 }
 
 .seeMoreDiv{
@@ -509,6 +506,10 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
     align-items: flex-end;
 }
 /* Landing Page  --------------------------------------------------------------------------------*/
+
+.homeNavLink{
+  color: #353535;
+}
 
 .landingHero{
   padding-top: 3vw;
@@ -784,51 +785,64 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
 }
 
 /* About Page--------------------------------------------------------------------------------------- */
+.aboutContainer{
 
-.aboutHero{
-  padding-top: 3vw;
-  width: auto;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: flex-end;
+  background-color: black;
+  margin-top: 3vw;
+  max-width: 100%;
 }
 
-.aboutHero img{
+.aboutHero1 img{
   width: auto;
   max-width: 100%;
-  position: absolute;
-}
-
-.aboutCopy{
-  color: #FAFAFA;
-  max-width: 50vw;
-  font-size: 1vw;
-  line-height: 1.5rem;
 }
 
 .aboutContent1{
-  position: relative;
-  color: #FAFAFA;
-  top: 25vw;
-  left: 10vw;
+  padding-top: 10%;
   max-width: 30%
 }
 
-.aboutContent1 h1{
+.aboutContent1 h1, .aboutContent2 h1{
     color: #FAFAFA;
+}
+
+.aboutContent1 p{
+  color: #FAFAFA;
+  font-size: 1vw;
+  line-height: 1.5rem;
+  max-width: 70%;
+}
+
+.aboutContent2 p{
+  color: #FAFAFA;
+  font-size: 1vw;
+  line-height: 1.5rem;
+  max-width: 100%;
+}
+
+.about2Container{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  padding-top: 3vw;
+  max-width: 100%;
+}
+
+.aboutHero2 img{
+  max-width: 100%;
 }
 
 .aboutContent2{
-  position: relative;
-  color: #FAFAFA;
-  top: 50vw;
-  left: 60vw;
-  max-width: 30%
-}
-
-.aboutContent2 h1{
-    color: #FAFAFA;
+  padding-top: 7vw;
+  padding-left: 7vw;
+  max-width: 32%;
 }
 
 .aboutContent3{
-  padding-top: 70vw;
+  padding-top: 3vw;
   display: flex;
   justify-content: center;
 }
@@ -939,6 +953,34 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
 }
 
 /* media queries --------------------------------------------------------------------------------*/
+  @media (width <= 1446px){
+    .aboutContainer{
+      display: flex;
+      flex-wrap: wrap-reverse;
+      justify-content: center;
+    }
+    .aboutContent1 h1, .aboutContent2 h1{
+        text-align: center;
+    }
+    .aboutContent1 p, .aboutContent2 p{
+        font-size: 1.5vw;
+        line-height: 2rem;
+        min-width: 50%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .about2Container{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .aboutContent2{
+      padding-bottom: 6vw;
+    }
+  }
+
  @media (width <= 1210px){
 
     .hero2Content, .hero3Content{
@@ -953,7 +995,7 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
 
    .hero1Content{
      align-self: center;
-     line-height: 2rem;
+     line-height: 3rem;
      position: static;
      max-width: 60%;
      padding-top: 2vw;
@@ -975,7 +1017,7 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
    .hero2Content{
      align-self: center;
      padding-right: 0px;
-     line-height: 1.5rem;
+     line-height: 3rem;
      padding-top: 5vw;
      text-align: center;
    }
@@ -987,7 +1029,7 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
      font-size: 5vw;
    }
 
-   .hero1Content p, .hero2Content p, .hero3Content p, .allProducts p, .confirmContent p, .aboutContent a{
+   .hero1Content p, .hero2Content p, .hero3Content p, .allProducts p, .confirmContent p, .aboutContent1 p{
      font-size: 3vw;
    }
 
@@ -1030,12 +1072,25 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
        bottom: 30vh;
    }
 
-
-   .aboutContent3{
-     padding-top: 60vw;
+   .aboutContainer{
      display: flex;
+     flex-wrap: wrap-reverse;
      justify-content: center;
    }
+
+   .aboutContent1, .aboutContent2{
+     align-items: center;
+     max-width: 85%;
+   }
+
+   .aboutContent1 p, .aboutContent2 p{
+       font-size: 1.5vw;
+       line-height: 2rem;
+       min-width: 50%;
+       max-width: 100%;
+       text-align: center;
+   }
+
  }
 
  @media (width <= 1102px) {
@@ -1043,20 +1098,6 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
      padding-left: 1vw;
      margin-right: 1vw;
      width: 100%;
-   }
-
-   .aboutContent2{
-     position: relative;
-     color: #FAFAFA;
-     top: 40vw;
-     left: 60vw;
-     max-width: 30%
-   }
-
-   .aboutContent3{
-     padding-top: 55vw;
-     display: flex;
-     justify-content: center;
    }
 
 
@@ -1073,6 +1114,9 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
      justify-content: center;
    }
 
+   .aboutContent1 p, .aboutContent2 p{
+       font-size: 2vw;
+   }
  }
  @media (width < 905px){
 
@@ -1112,19 +1156,16 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
    .checkoutCart p{
      font-size: 4vw;
    }
+
+   .aboutContent1 p, .aboutContent2 p{
+       font-size: 3vw;
+   }
  }
 
  @media (width < 404px){
 
    nav{
      font-size: 3vw;
-   }
-
-   .aboutCopy{
-     font-size: 3vw;
-     max-width: 68%;
-     padding-left: 16vw;
-     padding-right: 16vw;
    }
 
    .confirmContent{
@@ -1146,12 +1187,12 @@ input[type=text]:focus, input[type=text]:hover, input[type=email]:focus, input[t
 
 /* typefaces --------------------------------------------------------------------------------*/
 @font-face {
-    
+
     font-family: 'PP Right Didone - Spatial Fine';
     src: url('../fonts/PPRightDidone-SpatialFine.woff2') format('woff2'),
         url('../fonts/PPRightDidone-SpatialFinet.woff') format('woff'),
         url('../fonts/PPRightDidone-SpatialFine.ttf') format('truetype');
-    
+
     font-weight: 300;
     font-style: normal;
 
